@@ -143,3 +143,8 @@ a.button:active {
 	top: 15em; /* Сдвигаем вниз */
 	margin: auto;
 }
+.lungage{
+	position: relative;
+	float: right;
+	padding-right: 3%;
+}

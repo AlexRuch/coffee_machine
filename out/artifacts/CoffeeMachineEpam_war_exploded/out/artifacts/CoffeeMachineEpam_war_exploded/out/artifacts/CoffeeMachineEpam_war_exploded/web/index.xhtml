@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:loadBundle  basename="res/text" var="msg"/>
+<f:view locale="#{bundle.localeCode}">
+<head>
+   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+   <title>Coffee Machine</title>
+   <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+      <div class="header">
+         <div class="logo">
+            <img src="images/logo_mini.png" height="100px"/>
+
+         </div>
+
+         <div class="topMenu">
+            <div class="navigation">
+               <a href="#">#{msg.catalogCoffee}</a>
+               <a href="#">#{msg.catalogTopping}</a>
+               <a href="#">#{msg.myBag}</a>
+               <a href="registration.xhtml">#{msg.registrationUser}</a>
+            </div>
+            <div class="lungage">
+               <h:form>
+                  <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
+                                   valueChangeListener="#{bundle.countryLocaleCodeChanged}">
+                     <f:selectItems value="#{bundle.countriesInMap}" />
+                  </h:selectOneMenu>
+               </h:form>
+            </div>
+         </div>
+
+      </div>
+      <div class="content">
+
+         <!-- Данные из бд запихивать в код ниже-->
+
+         <ul>
+            <ui:repeat value="#{interactionProductsDB.coffee()}" var="coffee">
+               <!--<li>-->
+                  <!--<h:link value="#{coffee.productName}" outcome="coffee">-->
+                     <!--<f:param name="id" value="#{book.id}" />-->
+                  <!--</h:link>-->
+               <!--</li>-->
+               <li>
+               <div >
+               <h4>#{coffee.productName}</h4>
+               <img src="images/kava.jpg"
+               alt="coffee" width="120"/>
+               <h4>#{coffee.productPrice}</h4>
+               <div class="button_add">
+               <a href="#" class="button">#{msg.add}</a>
+               </div>
+               </div>
+               </li>
+
+            </ui:repeat>
+         </ul>
+
+         <!--<div class="catalog">-->
+            <!--<ul>-->
+            <!--<li>-->
+               <!--<div >-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120"/>-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120"/>-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120"/>-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<h:commandButton value="#{msg.add}"/>-->
+                     <!--&lt;!&ndash;<a href="#" class="button">#{msg.add}</a>&ndash;&gt;-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120" />-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120" />-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120" />-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120" />-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+               <!--<div>-->
+                  <!--<h4>This is awesome</h4>-->
+                  <!--<img src="images/kava.jpg"-->
+                       <!--alt="lobster" width="120" />-->
+                  <!--<h4>500</h4>-->
+                  <!--<div class="button_add">-->
+                     <!--<a href="#" class="button">#{msg.add}</a>-->
+                  <!--</div>-->
+               <!--</div>-->
+            <!--</li>-->
+            <!--</ul>-->
+         <!--</div>-->
+      </div>
+
+      <div class="footer"></div>
+
+</body>
+</f:view>
+</html>
+

@@ -5,7 +5,7 @@ import javax.persistence.*;
 /**
  * Created by alexey on 02/03/16.
  */
-@Entity
+@Entity(name = "productsEntity")
 @Table(name = "productsDB")
 public class ProductsDB {
     public ProductsDB(){
