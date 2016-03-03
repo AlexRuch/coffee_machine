@@ -1,0 +1,145 @@
+.header{
+	position: fixed;
+	height: 120px;
+	width: 100%;
+	background: #d9d9d5;
+	/*
+	box-shadow: 0.3em 0.3em 5px rgba(122,122,122,0.5);
+	*/
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	z-index: 2;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background:#eaeaea;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+.logo{
+	height: 100px;
+	padding-left: 15em;
+	padding-top: 10px;
+	float: left;
+}
+.topMenu{
+	padding-top: 60px;
+	text-align: center
+}
+.topMenu a{
+	margin: 50px;
+	color: #666;
+	font-size: 20px;
+	position: relative;
+	left: -100px;
+}
+.content{
+	position: relative; /* Относительное позиционирование */
+    top: 8.5em; /* Сдвигаем вниз */
+	width: 70%;
+	height: 1900px;
+	background: #fff;
+	margin: auto;
+	/*
+	box-shadow: 0.3em 0.3em 5px rgba(122,122,122,0.5);
+	*/
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	z-index: 1;
+}
+.footer{
+	position: relative; /* Фиксированное положение*/
+    left: 0; bottom: 0; /* Левый нижний угол */
+    /*padding: 10px;*/ /* Поля вокруг текста */
+    height: 40px;
+    background: #797975; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    top: 8.5em; 
+    box-shadow: 0 0 5px rgba(122,122,122,0.5);
+    z-index: 2;
+}
+
+.navigation{
+	margin: auto;
+	position: relative;
+	left: -70px;
+}
+
+a{
+	text-decoration: none;
+}
+
+li {
+        width: 200px;
+        min-height: 250px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px;
+        padding-bottom: 20px;
+        zoom: 1;
+        *display: inline;
+        _height: 250px;
+        box-shadow: 0 0 5px rgba(122,122,122,0.5);
+    }
+.catalog h4{
+	text-align: center;
+}
+
+.catalog img{
+	padding-left: 40px; 
+}
+
+.catalog{
+	padding-left: 13%;
+	padding-top: 5%;
+}
+
+a.button {
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+}
+a.button:hover {
+  color: rgb(24,24,24);
+  border: 1px solid rgb(198,198,198);
+  background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.button:active {
+  color: rgb(51,51,51);
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+.button_add{
+	text-align: center;
+}
+
+.registrationForm{	
+    position: relative; /* Относительное позиционирование */
+    top: 8.5em; /* Сдвигаем вниз */
+	width: 70%;
+	height: 800px;
+	background: #fff;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	z-index: 1;
+
+}
+
+.input{
+	position: relative; /* Относительное позиционирование */
+	top: 15em; /* Сдвигаем вниз */
+	margin: auto;
+}
