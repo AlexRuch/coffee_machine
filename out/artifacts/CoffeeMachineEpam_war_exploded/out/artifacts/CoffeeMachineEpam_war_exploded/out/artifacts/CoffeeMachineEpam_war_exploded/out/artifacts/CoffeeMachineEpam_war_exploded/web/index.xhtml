@@ -60,6 +60,17 @@
          </div>
       </div>
 
+
+      <ul>
+          <ui:repeat value="#{myBag.testCount()}" var="test">
+              <li>
+                  <div >
+                      <h4>#{test}</h4>
+                  </div>
+              </li>
+          </ui:repeat>
+      </ul>
+
       <div class="footer">
          <h:form>
             <h:outputLabel value="#{myBag.counter}"/>

@@ -16,29 +16,20 @@ public class interactionProductsDB {
 
     private List<ProductsDB> listOfCoffee;
     private List<ProductsDB> listOfTopping;
-    private String  coffeeQuery= "SELECT * FROM productsDB WHERE PRODUCTGROUP  LIKE 'coffee'";
-    private String  toppingQuery= "SELECT * FROM productsDB WHERE PRODUCTGROUP  LIKE 'topping'";
+
     EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
-
-
-
 
     public List<ProductsDB> coffee(){
 
-        listOfCoffee = entityManager.createQuery("from productsEntity u").getResultList();
-
+        listOfCoffee = entityManager.createQuery("from productsEntity p where p.productGroup like 'coffee'").getResultList();
 
         return listOfCoffee;
     }
 
-//    public List<ProductsDB> topping(){
-//        entityManager.getTransaction().begin();
-//        listOfTopping = (List<ProductsDB>)entityManager.createNativeQuery(toppingQuery,ProductsDB.class).getResultList();
-//        entityManager.getTransaction().commit();
-//
-//        return listOfTopping;
-//    }
+    public List<ProductsDB> topping(){
 
+        listOfCoffee = entityManager.createQuery("from productsEntity p where p.productGroup like 'topping'").getResultList();
 
-
+        return listOfTopping;
+    }
 }

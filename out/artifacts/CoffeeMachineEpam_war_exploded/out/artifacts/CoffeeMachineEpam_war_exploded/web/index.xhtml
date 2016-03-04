@@ -9,7 +9,7 @@
    <title>Coffee Machine</title>
    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body>
+  <body>
       <div class="header">
          <div class="logo">
             <img src="images/logo_mini.png" height="100px"/>
@@ -37,128 +37,35 @@
       <div class="content">
 
          <!-- Данные из бд запихивать в код ниже-->
-         <div class="catalog">
-
+      <div class="catalog">
          <ul>
             <ui:repeat value="#{interactionProductsDB.coffee()}" var="coffee">
-               <!--<li>-->
-                  <!--<h:link value="#{coffee.productName}" outcome="coffee">-->
-                     <!--<f:param name="id" value="#{book.id}" />-->
-                  <!--</h:link>-->
-               <!--</li>-->
                <li>
-               <div >
-               <h4>#{coffee.productName}</h4>
-               <img src="images/kava.jpg"
-               alt="coffee" width="120"/>
-               <h4>#{coffee.productPrice}</h4>
-               <div class="button_add">
-               <a href="#" class="button">#{msg.add}</a>
-               </div>
-               </div>
-               </li>
+                   <div >
+                       <h4>#{coffee.productName}</h4>
+                       <img src="images/kava.jpg"
+                       alt="coffee" width="120"/>
+                       <h4>#{coffee.productPrice}</h4>
 
+                       <div class="button_add">
+                          <h:form>
+                          <h:commandLink styleClass="button" value="#{msg.add}" action="#{myBag.addProductInOrder(coffee.id)}"/>
+                          </h:form>
+                       </div>
+
+                   </div>
+               </li>
             </ui:repeat>
          </ul>
-
-         <!--<div class="catalog">-->
-            <!--<ul>-->
-            <!--<li>-->
-               <!--<div >-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120"/>-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120"/>-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120"/>-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<h:commandButton value="#{msg.add}"/>-->
-                     <!--&lt;!&ndash;<a href="#" class="button">#{msg.add}</a>&ndash;&gt;-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120" />-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120" />-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120" />-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120" />-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--<li>-->
-               <!--<div>-->
-                  <!--<h4>This is awesome</h4>-->
-                  <!--<img src="images/kava.jpg"-->
-                       <!--alt="lobster" width="120" />-->
-                  <!--<h4>500</h4>-->
-                  <!--<div class="button_add">-->
-                     <!--<a href="#" class="button">#{msg.add}</a>-->
-                  <!--</div>-->
-               <!--</div>-->
-            <!--</li>-->
-            <!--</ul>-->
          </div>
       </div>
 
-      <div class="footer"></div>
-
-</body>
+      <div class="footer">
+         <h:form>
+            <h:outputLabel value="#{myBag.counter}"/>
+         </h:form>
+      </div>
+  </body>
 </f:view>
 </html>
 
