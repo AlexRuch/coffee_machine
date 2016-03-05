@@ -2,18 +2,202 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ac023d5-fa18-4e57-8d07-b64a70aff418" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/MyBag.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/interactionProductsDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/interactionProductsDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/interactionProductsDB.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/interactionProductsDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/validation/PasswordValidator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ant-1.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-attrs-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/atmosphere-runtime-2.4.0-RC6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/barcode4j-light-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/bcmail-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/bcmail-jdk14-138.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/bcprov-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/bcprov-jdk14-138.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/bctsp-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/cglib-2.1_3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-collections-2.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-fileupload-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-io-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-logging-1.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/core-3.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ehcache-1.2.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ehcache-2.7.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/el-api-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/geronimo-stax-api_1.0_spec-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hazelcast-2.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-3.2.7.ga.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-core-4.2.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/itext-2.1.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javase-3.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javassist-3.15.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.faces-2.2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.inject-1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.persistence.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.servlet-3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jaxb-api-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jdom-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jsr173_api-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/poi-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/poi-ooxml-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/poi-ooxml-schemas-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/primefaces-5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/qrgen-1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/rome-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/slf4j-api-1.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/stax-api-1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/validation-api-1.0.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/xml-apis-1.3.04.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/xmlbeans-2.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/atmosphere-runtime-2.4.0-RC6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/barcode4j-light-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/bcmail-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/bcmail-jdk14-138.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/bcprov-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/bcprov-jdk14-138.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/bctsp-jdk14-1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/commons-fileupload-1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/commons-io-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/core-3.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/ehcache-2.7.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/el-api-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/geronimo-stax-api_1.0_spec-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/hazelcast-2.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/itext-2.1.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/javase-3.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/javax.faces-2.2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/javax.inject-1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/javax.servlet-3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/jaxb-api-2.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/jdom-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/jsr173_api-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/poi-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/poi-ooxml-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/poi-ooxml-schemas-3.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/primefaces-5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/qrgen-1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/rome-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/slf4j-api-1.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/stax-api-1.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/validation-api-1.0.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/xml-apis-1.3.04.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/lib/xmlbeans-2.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/interactionProductsDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ant-1.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-attrs-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/cglib-2.1_3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-collections-2.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-logging-1.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ehcache-1.2.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-3.2.7.ga.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-core-4.2.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javassist-3.15.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.persistence.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/lib/primefaces-5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ant-1.6.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/asm-attrs-1.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/cglib-2.1_3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-collections-2.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/commons-logging-1.0.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/ehcache-1.2.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-3.2.7.ga.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-commons-annotations-4.0.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-core-4.2.2.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javassist-3.15.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/javax.persistence.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/Registration.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/interaction/interactionProductsDB.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/validation/PasswordValidator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/alexey.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_primefaces_primefaces_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/dictionaries/alexey.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/libraries/org_primefaces_primefaces_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/Registration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration_result.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/Registration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/js/help.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration_result.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/Registration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/interactionProductsDB.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/js/help.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration_result.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/validation/PasswordValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/validation/PasswordValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/Registration.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/Registration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/MyBag.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/MyBag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/MyBag.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/MyBag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/MyBag.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/MyBag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/MyBag.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/controller/MyBag.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/controller/Registration.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/controller/Registration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/CoffeeMachineEpam_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/CoffeeMachineEpam_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/interactionProductsDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/interactionProductsDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoffeeMachineEpam.iml" afterPath="$PROJECT_DIR$/CoffeeMachineEpam.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/artifacts/CoffeeMachineEpam_war_exploded.xml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/artifacts/CoffeeMachineEpam_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/CoffeeMachineEpam.iml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/CoffeeMachineEpam.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/MyBag.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/MyBag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/MyBag.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/MyBag.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/Registration.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/controller/Registration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/WEB-INF/faces-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/interaction/interactionProductsDB.java" afterPath="$PROJECT_DIR$/src/interaction/interactionProductsDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration_result.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/registration_result.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text.properties" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Registration.java" afterPath="$PROJECT_DIR$/src/controller/Registration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/res/text.properties" afterPath="$PROJECT_DIR$/src/res/text.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/src/res/text_ru_RU.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/style.css" afterPath="$PROJECT_DIR$/web/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.xhtml" afterPath="$PROJECT_DIR$/web/registration.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration_result.xhtml" afterPath="$PROJECT_DIR$/web/registration_result.xhtml" />
     </list>
     <ignored path="CoffeeMachineEpam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,52 +251,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1587301">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.666666">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyBag.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/MyBag.java">
+      <file leaf-file-name="PasswordValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/validation/PasswordValidator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#MyBag#0;class#MyBag#0" expanded="false" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/style.css">
+      <file leaf-file-name="Registration.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/Registration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coffee_machine_v2.productsDB" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.productsDB">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state vertical-scroll-proportion="0.75757575">
+              <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Registration#0;class#Registration#0" expanded="false" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,6 +295,24 @@
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="method#ProductsDB#0;class#ProductsDB#0" expanded="false" />
+                <element signature="e#549#550#0" expanded="false" />
+                <element signature="e#574#575#0" expanded="false" />
+                <element signature="e#612#613#0" expanded="false" />
+                <element signature="e#646#647#0" expanded="false" />
+                <element signature="e#700#701#0" expanded="false" />
+                <element signature="e#746#747#0" expanded="false" />
+                <element signature="e#785#786#0" expanded="false" />
+                <element signature="e#820#821#0" expanded="false" />
+                <element signature="e#876#877#0" expanded="false" />
+                <element signature="e#924#925#0" expanded="false" />
+                <element signature="e#962#963#0" expanded="false" />
+                <element signature="e#997#998#0" expanded="false" />
+                <element signature="e#1052#1053#0" expanded="false" />
+                <element signature="e#1100#1101#0" expanded="false" />
+                <element signature="e#1139#1140#0" expanded="false" />
+                <element signature="e#1177#1178#0" expanded="false" />
+                <element signature="e#1236#1237#0" expanded="false" />
+                <element signature="e#1290#1291#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,7 +324,7 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -170,23 +359,26 @@
         <option value="$PROJECT_DIR$/src/UsersDB.java" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/SaveUser.java" />
-        <option value="$PROJECT_DIR$/web/registration_result.xhtml" />
         <option value="dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.usersDB" />
         <option value="$PROJECT_DIR$/src/model/UsersDB.java" />
         <option value="$PROJECT_DIR$/src/interaction/InteractionUsersDB.java" />
-        <option value="$PROJECT_DIR$/src/controller/Registration.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/src/controller/LocalizationBean.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/res/text_ru_RU.properties" />
-        <option value="$PROJECT_DIR$/src/res/text.properties" />
-        <option value="$PROJECT_DIR$/web/registration.xhtml" />
         <option value="$PROJECT_DIR$/src/model/ProductsDB.java" />
         <option value="$PROJECT_DIR$/src/interaction/interactionProductsDB.java" />
         <option value="dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.productsDB" />
         <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/src/controller/MyBag.java" />
+        <option value="$PROJECT_DIR$/web/registration_result.xhtml" />
+        <option value="$PROJECT_DIR$/src/controller/PersonHome.java" />
+        <option value="$PROJECT_DIR$/src/controller/Registration.java" />
+        <option value="$PROJECT_DIR$/web/js/help.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
+        <option value="$PROJECT_DIR$/src/res/text.properties" />
+        <option value="$PROJECT_DIR$/src/res/text_ru_RU.properties" />
+        <option value="$PROJECT_DIR$/web/registration.xhtml" />
+        <option value="$PROJECT_DIR$/src/validation/PasswordValidator.java" />
+        <option value="$PROJECT_DIR$/web/index.xhtml" />
       </list>
     </option>
   </component>
@@ -211,9 +403,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1977" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1863" />
-    <option name="height" value="1176" />
+    <option name="height" value="1204" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -240,9 +432,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -321,8 +510,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoffeeMachineEpam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoffeeMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Bundle 'text'" />
+              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -371,30 +582,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
+    <property name="settings.editor.selected.configurable" value="preferences.remoteExternalTools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="MySQL" />
   </component>
   <component name="RecentsManager">
@@ -958,12 +1168,14 @@
       <workItem from="1456909994968" duration="1977000" />
       <workItem from="1456995762187" duration="2648000" />
       <workItem from="1457005589518" duration="19186000" />
-      <workItem from="1457080490314" duration="2701000" />
+      <workItem from="1457080490314" duration="10775000" />
+      <workItem from="1457165879280" duration="2675000" />
+      <workItem from="1457186344637" duration="3750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47182000" />
+    <option name="totallyTimeSpent" value="61681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -975,23 +1187,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1977" y="24" width="1863" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="1977" y="-4" width="1863" height="1204" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.49807376" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.49807376" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42168674" sideWeight="0.3252614" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42168674" sideWeight="0.330765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42168674" sideWeight="0.6747386" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42168674" sideWeight="0.669235" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.49367088" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16413043" sideWeight="0.5359765" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16951019" sideWeight="0.4640235" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16951019" sideWeight="0.4640235" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15960374" sideWeight="0.5305785" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3401211" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1029,13 +1241,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionUsersDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1050,6 +1255,24 @@
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="method#ProductsDB#0;class#ProductsDB#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#612#613#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
+            <element signature="e#820#821#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#962#963#0" expanded="false" />
+            <element signature="e#997#998#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="false" />
+            <element signature="e#1139#1140#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="false" />
+            <element signature="e#1236#1237#0" expanded="false" />
+            <element signature="e#1290#1291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1058,6 +1281,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +1290,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1075,6 +1299,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="method#UsersDB#0;class#UsersDB#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,6 +1309,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,6 +1337,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,6 +1345,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Registration#0;class#Registration#0" expanded="false" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,6 +1365,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="method#UsersDB#0;class#UsersDB#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,6 +1409,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding>
+            <element signature="method#UsersDB#0;class#UsersDB#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,6 +1442,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="method#UsersDB#0;class#UsersDB#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,29 +1513,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration_result.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.usersDB">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/UsersDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="method#UsersDB#0;class#UsersDB#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1302,22 +1530,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13899614">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/JDK/jdk1.8.0_73/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="359" column="25" selection-start-line="359" selection-start-column="25" selection-end-line="359" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1329,54 +1545,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/res/text_ru_RU.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.225806">
-          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/res/text.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.064516">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/LocalizationBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03125">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionUsersDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Registration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1385,7 +1560,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1394,6 +1569,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ProductsDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="method#ProductsDB#0;class#ProductsDB#0" expanded="false" />
+            <element signature="e#549#550#0" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#612#613#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
+            <element signature="e#820#821#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#962#963#0" expanded="false" />
+            <element signature="e#997#998#0" expanded="false" />
+            <element signature="e#1052#1053#0" expanded="false" />
+            <element signature="e#1100#1101#0" expanded="false" />
+            <element signature="e#1139#1140#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="false" />
+            <element signature="e#1236#1237#0" expanded="false" />
+            <element signature="e#1290#1291#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MyBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57575756">
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration_result.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1406,13 +1623,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ProductsDB.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5708955">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/res/text.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.806452">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/res/text_ru_RU.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.806452">
+          <caret line="10" column="91" selection-start-line="10" selection-start-column="91" selection-end-line="10" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validation/PasswordValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="method#ProductsDB#0;class#ProductsDB#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.666666">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.usersDB">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1429,24 +1700,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MyBag.java">
+    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MyBag#0;class#MyBag#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="1.7460318">
+          <caret line="55" column="91" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionUsersDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1587301">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21212122">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75757575">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Registration#0;class#Registration#0" expanded="false" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1504,11 +1783,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|CoffeeMachineEpam</last-edited>
+          <last-edited>CoffeeMachineEpam</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1528,7 +1808,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.hibernate:hibernate:3.2.7.ga</last-edited>
+          <last-edited>org.primefaces:primefaces:5.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

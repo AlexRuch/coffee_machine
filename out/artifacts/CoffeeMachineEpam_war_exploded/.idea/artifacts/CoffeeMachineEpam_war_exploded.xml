@@ -7,6 +7,14 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CoffeeMachineEpam" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate 4.2.2-4.2.2" />
+          <element id="library" level="project" name="JPA 2.1-2.1" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.23-bin" />
+          <element id="library" level="project" name="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
+          <element id="library" level="project" name="org.hibernate:hibernate:3.2.7.ga" />
+          <element id="library" level="project" name="org.primefaces:primefaces:5.3" />
+        </element>
       </element>
     </root>
   </artifact>

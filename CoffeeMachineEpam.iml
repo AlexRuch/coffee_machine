@@ -37,5 +37,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="project" />
     <orderEntry type="library" name="org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
     <orderEntry type="library" name="org.hibernate:hibernate:3.2.7.ga" level="project" />
+    <orderEntry type="library" name="org.primefaces:primefaces:5.3" level="project" />
   </component>
 </module>

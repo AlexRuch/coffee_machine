@@ -3,18 +3,20 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 <f:loadBundle  basename="res/text" var="msg"/>
 <f:view locale="#{bundle.localeCode}">
 <head>
     <title>Coffee Machine</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
-<body>
+    <body>
 
     <div class="header">
     <div class="logo">
-        <img src="images/logo_mini.png" height="100px"/>
+        <img src="images/logo_mini.png" height="100px" alt=" "/>
 
     </div>
 
@@ -22,7 +24,7 @@
         <div class="navigation">
             <a href="index.xhtml">#{msg.catalogCoffee}</a>
             <a href="#">#{msg.catalogTopping}</a>
-            <a href="#">My bag</a>
+            <a href="#">#{msg.myBag}</a>
         </div>
         <div class="lungage">
             <h:form>
@@ -38,14 +40,32 @@
 <div class="registrationForm">
     <div class="input">
     <h:form>
-        <h:inputText value="#{registration.userName}" a:placeholder="#{msg.userName}"/>
+        <h:inputText value="#{registration.userName}" a:placeholder="#{msg.userName}" >
+            <f:validateLength minimum="3"/>
+        </h:inputText>
         <br/><br/>
-        <h:inputText value="#{registration.userEmail}" a:placeholder="#{msg.userEmail}"/>
-        <br/><br/>
-        <h:inputText value="#{registration.userPassword}" a:placeholder="#{msg.userPassword}"/>
-        <br/><br/>
-        <h:inputText value="#{registration.userPassword}" a:placeholder="#{msg.userConfirmPassword}"/>
-        <br/><br/>
+        <h:inputText value="#{registration.userEmail}"
+                     id="userEmail"
+                     a:placeholder="#{msg.userEmail}"
+                     validatorMessage = "#{msg.emailErr}">
+            <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+        </h:inputText>
+        <br/>
+        <h:message for="userEmail"/>
+        <br/>
+        <h:inputText a:placeholder="Password" id="password" value="#{registration.userPassword}" required="true">
+            <f:validator validatorId="confirmPasswordValidator" />
+            <f:attribute name="confirm" value="#{confirmPassword.submittedValue}" />
+            <f:ajax event="blur" execute="password confirm" render="m_password" />
+        </h:inputText>
+        <br/>
+        <h:message id="m_password" for="password" />
+        <br/>
+        <h:inputText a:placeholder="Confirm password" id="confirm" binding="#{confirmPassword}" required="true">
+            <f:ajax event="blur" execute="password confirm" render="m_password m_confirm" />
+        </h:inputText>
+        <h:message id="m_confirm" for="confirm" />
+        <br/>
         <h:commandButton value="#{msg.submit}" action="#{registration.SaveUser()}"/>
     </h:form>
     </div>

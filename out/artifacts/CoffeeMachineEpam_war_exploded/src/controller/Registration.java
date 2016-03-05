@@ -16,12 +16,15 @@ public class Registration {
     private String userName;
     private String userEmail;
     private String userPassword;
-    private String userConfirmPassword;
     private String registrationResult;
     InteractionUsersDB interactionUsersDB;
 
     public Registration(){
 
+    }
+
+    public String getRegistrationResult() {
+        return registrationResult;
     }
 
     public String getUserName() {
@@ -48,26 +51,13 @@ public class Registration {
         this.userPassword = userPassword;
     }
 
-    public String getUserConfirmPassword() {
-        return userConfirmPassword;
-    }
-
-    public void setUserConfirmPassword(String userConfirmPassword) {
-        this.userConfirmPassword = userConfirmPassword;
-    }
 
     public String SaveUser() throws HeuristicRollbackException, HeuristicMixedException, NotSupportedException, RollbackException, SystemException {
 
         interactionUsersDB = new InteractionUsersDB();
 
-        if(userPassword.equals(userConfirmPassword)){
             interactionUsersDB.addUser(userName, userEmail, userPassword);
             registrationResult = "Success!";
-        }
-        else {
-            registrationResult = "Registration filed! Passwords mismatch";
-        }
-
 
         return "registration_result";
     }

@@ -13,4 +13,8 @@
             <var>msg</var>
         </resource-bundle>
     </application>
+    <validator>
+        <validator-id>passwordValidator</validator-id>
+        <validator-class>validation.PasswordValidator</validator-class>
+    </validator>
 </faces-config>
