@@ -24,11 +24,9 @@ public class MyBag {
     public MyBag(){
 
     }
-
-    EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
-
+    private EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
     private List<ProductsDB> listOfUserOrder = new ArrayList<>();
-
+    private float orderCost;
     // for show products in user bag
     public List<ProductsDB> getListOfUserOrder() {
         return listOfUserOrder;
@@ -39,4 +37,17 @@ public class MyBag {
         listOfUserOrder.add(entityManager.createQuery("select p from productsEntity p where p.id = ?1 ", ProductsDB.class).setParameter(1, productId).getResultList().get(0));
     }
 
+    public String deleteProductInOrder(ProductsDB product){
+        listOfUserOrder.remove(product);
+        return "myBag";
+    }
+    public float totalCost(){
+        orderCost = 0f;
+
+        for (ProductsDB product : listOfUserOrder){
+            orderCost += product.getProductPrice();
+        }
+
+        return orderCost;
+    }
 }

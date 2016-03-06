@@ -143,3 +143,48 @@ li {
 	top: 15em; /* Сдвигаем вниз */
 	margin: auto;
 }
+
+table{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	background: #FFF;
+	max-width: 90%;
+	width: 90%;
+	border-collapse: collapse;
+	text-align: left;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+}
+
+th{
+	font-weight: normal;
+	color: #666;
+	padding: 10px 15px;
+}
+td{
+	color: #666;
+	border-top: 1px solid #999;
+	padding: 10px 15px;
+}
+tr:hover td{
+	background: #fafafa;
+}
+
+div.myBagTable{
+
+	padding-top: 2em;
+	padding-left: 10%;
+}
+
+.myBagContent{
+	position: relative; /* Относительное позиционирование */
+	top: 1.8em; /* Сдвигаем вниз */
+	width: 70%;
+	height: 1200px;
+	background: #fff;
+	margin: auto;
+	/*
+	box-shadow: 0.3em 0.3em 5px rgba(122,122,122,0.5);
+	*/
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	z-index: 1;
+}

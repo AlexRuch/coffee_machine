@@ -53,7 +53,7 @@
         <br/>
         <h:message for="userEmail"/>
         <br/>
-        <h:inputText a:placeholder="Password" id="password" value="#{registration.userPassword}" required="true">
+        <h:inputText a:placeholder="#{msg.userPassword}" id="password" value="#{registration.userPassword}" required="true">
             <f:validator validatorId="confirmPasswordValidator" />
             <f:attribute name="confirm" value="#{confirmPassword.submittedValue}" />
             <f:ajax event="blur" execute="password confirm" render="m_password" />
@@ -61,7 +61,7 @@
         <br/>
         <h:message id="m_password" for="password" />
         <br/>
-        <h:inputText a:placeholder="Confirm password" id="confirm" binding="#{confirmPassword}" required="true">
+        <h:inputText a:placeholder="#{msg.userConfirmPassword}" id="confirm" binding="#{confirmPassword}" required="true">
             <f:ajax event="blur" execute="password confirm" render="m_password m_confirm" />
         </h:inputText>
         <h:message id="m_confirm" for="confirm" />

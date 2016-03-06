@@ -18,7 +18,8 @@ public class PasswordValidator implements Validator {
         String confirm = (String) component.getAttributes().get("confirm");
 
         if (password == null || confirm == null) {
-            return;
+//            return;
+            throw new ValidatorException(new FacesMessage("Enter password."));
         }
 
         if (!password.equals(confirm)) {
