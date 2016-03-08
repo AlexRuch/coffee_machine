@@ -52,14 +52,14 @@ public class Registration {
     }
 
 
-    public String SaveUser() throws HeuristicRollbackException, HeuristicMixedException, NotSupportedException, RollbackException, SystemException {
+    public String saveUser() throws HeuristicRollbackException, HeuristicMixedException, NotSupportedException, RollbackException, SystemException {
 
         interactionUsersDB = new InteractionUsersDB();
 
             interactionUsersDB.addUser(userName, userEmail, userPassword);
             registrationResult = "Success!";
 
-        return "registration_result";
+        return "index";
     }
 
 }

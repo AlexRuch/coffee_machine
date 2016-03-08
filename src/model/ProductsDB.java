@@ -1,6 +1,7 @@
 package model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * Created by alexey on 02/03/16.
@@ -25,6 +26,21 @@ public class ProductsDB {
     private float  productPrice;
     @Column
     private int    productQuantity;
+
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "products")
+    private Set<OrdersDB> orders;
+
+    public Set<OrdersDB> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<OrdersDB> orders) {
+        this.orders = orders;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Long getId() {
         return id;

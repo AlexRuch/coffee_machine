@@ -20,7 +20,8 @@
             <div class="navigation">
                <a href="#">#{msg.catalogCoffee}</a>
                <a href="#">#{msg.catalogTopping}</a>
-               <a href="#">#{msg.myBag}</a>
+               <a href="myBag.xhtml">#{msg.myBag}</a>
+               <a href="signIn.xhtml">Sign in</a>
                <a href="registration.xhtml">#{msg.registrationUser}</a>
             </div>
             <div class="lungage">
@@ -60,21 +61,7 @@
          </div>
       </div>
 
-
-      <ul>
-          <ui:repeat value="#{myBag.testCount()}" var="test">
-              <li>
-                  <div >
-                      <h4>#{test}</h4>
-                  </div>
-              </li>
-          </ui:repeat>
-      </ul>
-
       <div class="footer">
-         <h:form>
-            <h:outputLabel value="#{myBag.counter}"/>
-         </h:form>
       </div>
   </body>
 </f:view>

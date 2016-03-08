@@ -1,6 +1,5 @@
 <component name="libraryTable">
-  <library name="org.hibernate:hibernate:3.2.7.ga" type="repository">
-    <properties maven-id="org.hibernate:hibernate:3.2.7.ga" />
+  <library name="org.hibernate:hibernate:3.2.7.ga">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate/3.2.7.ga/hibernate-3.2.7.ga.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar!/" />

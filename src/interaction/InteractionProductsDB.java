@@ -12,7 +12,7 @@ import java.util.List;
  * Created by alexey on 02/03/16.
  */
 @ManagedBean
-public class interactionProductsDB {
+public class InteractionProductsDB {
 
     private List<ProductsDB> listOfCoffee;
     private List<ProductsDB> listOfTopping;
@@ -21,14 +21,14 @@ public class interactionProductsDB {
 
     public List<ProductsDB> coffee(){
 
-        listOfCoffee = entityManager.createQuery("from productsEntity p where p.productGroup like 'coffee'").getResultList();
+        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee'").getResultList();
 
         return listOfCoffee;
     }
 
     public List<ProductsDB> topping(){
 
-        listOfCoffee = entityManager.createQuery("from productsEntity p where p.productGroup like 'topping'").getResultList();
+        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'").getResultList();
 
         return listOfTopping;
     }

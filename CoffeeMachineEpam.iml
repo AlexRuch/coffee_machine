@@ -17,7 +17,7 @@
         <setting name="provider-name" value="EclipseLink" />
         <datasource-mapping>
           <factory-entry name="COFFEE_MACHINE" />
-          <factory-entry name="EPAM" />
+          <factory-entry name="EPAM" value="c31bda01-5d04-4ced-90bb-f1151a1b48f8" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/META-INF/persistence.xml" />
       </configuration>

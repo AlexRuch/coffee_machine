@@ -11,60 +11,82 @@
       <table id="2" parent="1" name="SEQUENCE"/>
       <table id="3" parent="1" name="usersDB"/>
       <table id="4" parent="1" name="productsDB"/>
-      <column id="5" parent="2" name="SEQ_NAME">
+      <table id="5" parent="1" name="ORDERSDB"/>
+      <column id="6" parent="2" name="SEQ_NAME">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="6" parent="2" name="SEQ_COUNT">
+      <column id="7" parent="2" name="SEQ_COUNT">
         <data-type>decimal(38)</data-type>
       </column>
-      <key id="7" parent="2" name="PRIMARY">
+      <key id="8" parent="2" name="PRIMARY">
         <columns>SEQ_NAME</columns>
         <primary>1</primary>
       </key>
-      <column id="8" parent="3" name="ID">
+      <column id="9" parent="3" name="ID">
         <mandatory>1</mandatory>
         <data-type>bigint(20)</data-type>
       </column>
-      <column id="9" parent="3" name="USERACCOUNT">
+      <column id="10" parent="3" name="USERACCOUNT">
         <data-type>float</data-type>
       </column>
-      <column id="10" parent="3" name="USEREMAIL">
+      <column id="11" parent="3" name="USEREMAIL">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="11" parent="3" name="USERGROUP">
+      <column id="12" parent="3" name="USERGROUP">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="12" parent="3" name="USERNAME">
+      <column id="13" parent="3" name="USERNAME">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="13" parent="3" name="USERPASSWORD">
+      <column id="14" parent="3" name="USERPASSWORD">
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="14" parent="3" name="PRIMARY">
+      <key id="15" parent="3" name="PRIMARY">
         <columns>ID</columns>
         <primary>1</primary>
       </key>
-      <column id="15" parent="4" name="ID">
+      <column id="16" parent="4" name="ID">
         <mandatory>1</mandatory>
         <data-type>bigint(20)</data-type>
       </column>
-      <column id="16" parent="4" name="PRODUCTGROUP">
+      <column id="17" parent="4" name="PRODUCTGROUP">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="17" parent="4" name="PRODUCTNAME">
+      <column id="18" parent="4" name="PRODUCTNAME">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="18" parent="4" name="PRODUCTPRICE">
+      <column id="19" parent="4" name="PRODUCTPRICE">
         <data-type>float</data-type>
       </column>
-      <column id="19" parent="4" name="PRODUCTQUANTITY">
+      <column id="20" parent="4" name="PRODUCTQUANTITY">
         <data-type>int(11)</data-type>
       </column>
-      <key id="20" parent="4" name="PRIMARY">
+      <key id="21" parent="4" name="PRIMARY">
         <columns>ID</columns>
         <primary>1</primary>
       </key>
+      <column id="22" parent="5" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)</data-type>
+      </column>
+      <column id="23" parent="5" name="userId">
+        <data-type>bigint(20)</data-type>
+      </column>
+      <index id="24" parent="5" name="FK_ORDERSDB_userId">
+        <columns>userId</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="25" parent="5" name="PRIMARY">
+        <columns>ID</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="26" parent="5" name="FK_ORDERSDB_userId">
+        <columns>userId</columns>
+        <ref-key>~.usersDB.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
     </database-model>
   </data-source>
 </component>

@@ -1,12 +1,13 @@
 package model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by alexey on 01/03/16.
  * jdbc:mysql://localhost:3306/coffee_machine_v2
  */
-@Entity
+@Entity(name = "usersEntity")
 @Table(name = "usersDB")
 public class UsersDB {
 
@@ -29,6 +30,10 @@ public class UsersDB {
     private float  userAccount;
     @Column
     private String userGroup;
+
+    @OneToMany(mappedBy = "user")
+    private List<OrdersDB> order;
+
 
     public Long getId() {
         return id;
