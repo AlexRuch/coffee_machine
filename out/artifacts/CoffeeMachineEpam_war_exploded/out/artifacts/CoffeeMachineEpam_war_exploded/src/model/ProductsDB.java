@@ -1,22 +1,24 @@
 package model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by alexey on 02/03/16.
  */
 @Entity(name = "productsEntity")
-@Table(name = "productsDB")
-public class ProductsDB {
+public class ProductsDB implements Serializable{
     public ProductsDB(){
 
     }
 
-    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @Column(name = "id", nullable = false)
+    private long id;
+
+
 
     @Column
     private String productName;
@@ -27,19 +29,21 @@ public class ProductsDB {
     @Column
     private int    productQuantity;
 
-    @ManyToMany(mappedBy = "product", cascade = CascadeType.PERSIST)
-    private List<OrdersDB> order;
+    @OneToMany(mappedBy = "productsDB")
+    private List<OrderedProductsDB> orderedProductsDB;
 
-    public List<OrdersDB> getOrder() {
-        return order;
+    public List<OrderedProductsDB> getOrderedProductsDB() {
+        return orderedProductsDB;
     }
 
-    public void setOrder(List<OrdersDB> order) {
-        this.order = order;
+    public void setOrderedProductsDB(List<OrderedProductsDB> orderedProductsDB) {
+        this.orderedProductsDB = orderedProductsDB;
     }
 
-    public Long getId() {
-        return id;
+    public long getId() {return id;}
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getProductName() {

@@ -64,9 +64,9 @@ public class MyBag {
     }
 
     public String confirmOrder(){
-        interactionOrdersDB = new InteractionOrdersDB();
-        listSize = listOfUserOrder.size();
-        InteractionOrdersDB.newOrder(listOfUserOrder);
-        return "myBag";
+
+        InteractionOrdersDB.confirmOrder(listOfUserOrder);
+
+        return "index";
     }
 }

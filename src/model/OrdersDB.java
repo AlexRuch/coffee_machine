@@ -1,29 +1,29 @@
 package model;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
-import java.util.Set;
+import java.util.List;
 
 /**
  * Created by alexey on 06/03/16.
  */
 @Entity
-@Table
 public class OrdersDB implements Serializable{
     public OrdersDB(){
 
     }
 
-    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @Column(name = "id", nullable = false)
+    private long id;
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -31,19 +31,16 @@ public class OrdersDB implements Serializable{
     @JoinColumn(name = "userId")
     private UsersDB user;
 
-    @ManyToMany
-    @JoinTable(name = "ORDERS_PRODUCTS",
-            joinColumns = @JoinColumn(name = "order_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id")
-    )
-    private Set<ProductsDB> products;
+    @ManyToMany(mappedBy = "order")
+    @XmlTransient
+    private List<OrderedProductsDB> product;
 
-    public Set<ProductsDB> getProducts() {
-        return products;
+    public List<OrderedProductsDB> getProduct() {
+        return product;
     }
 
-    public void setProducts(Set<ProductsDB> products) {
-        this.products = products;
+    public void setProduct(List<OrderedProductsDB> product) {
+        this.product = product;
     }
 
     public UsersDB getUser() {

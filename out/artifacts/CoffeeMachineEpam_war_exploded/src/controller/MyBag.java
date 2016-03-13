@@ -65,7 +65,8 @@ public class MyBag {
 
     public String confirmOrder(){
 
-        interactionOrdersDB.confirmOrder(listOfUserOrder);
+        InteractionOrdersDB.setListOfProducts(listOfUserOrder);
+        InteractionOrdersDB.confirmOrder();
 
         return "index";
     }

@@ -59,31 +59,6 @@
                     </h:form>
             </h:form>
         </div>
-            <div class="myBagTable">
-                <h:form>
-                    <h:dataTable value="#{interactionOrdersDB.productsDBs}" var="listOfProducts" border="0">
-                        <h:column>
-                            <f:facet name="header">#{msg.productName}</f:facet>
-                            #{listOfProducts.productName}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">#{msg.productPrice}</f:facet>
-                            #{listOfProducts.productPrice}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">#{msg.productCancel}</f:facet>
-                            <h:commandLink value="#{msg.productCancel}" action="#{myBag.deleteProductInOrder(listOfProducts)}"/>
-                        </h:column>
-                    </h:dataTable>
-                    <br/>
-                    <p class="totalCost">#{msg.totalCost}: #{myBag.totalCost()}</p>
-                    <br/>
-                    <p>List size :#{myBag.listSize}</p>
-                    <br/>
-                    <p>Order size :#{interactionOrdersDB.orderList}</p>
-                    <br/>
-                </h:form>
-            </div>
         </div>
     </div>
 </body>

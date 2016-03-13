@@ -5,6 +5,9 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>model.ProductsDB</class>
     <class>model.OrdersDB</class>
+    <class>model.OrderedProductsDB</class>
+    <class>model.OrderedProductsDB</class>
+    <class>model.OrderProductDB</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />

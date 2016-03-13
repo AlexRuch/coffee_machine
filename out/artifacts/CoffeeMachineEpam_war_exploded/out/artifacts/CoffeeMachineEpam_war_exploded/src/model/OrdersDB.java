@@ -2,40 +2,53 @@ package model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by alexey on 06/03/16.
  */
 @Entity
+@Table
 public class OrdersDB implements Serializable{
     public OrdersDB(){
 
     }
 
-    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @Column(name = "id", nullable = false)
+    private long id;
+
+
+//    @ElementCollection
+//    private List<ProductsDB> listOfProducts;
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     @ManyToOne
     @JoinColumn(name = "userId")
     private UsersDB user;
 
+
+
     @ManyToMany
-    @JoinTable(name = "ORDER_PRODUCTS")
-    private List<ProductsDB> product;
+    @JoinTable
+    private List<ProductsDB> listOfProducts = new ArrayList<>();
 
-    public List<ProductsDB> getProduct() {
-        return product;
+    public List<ProductsDB> getListOfProducts() {
+        return listOfProducts;
     }
 
-    public void setProduct(List<ProductsDB> product) {
-        this.product = product;
-    }
-
-    public Long getId() {
-        return id;
+    public void setListOfProducts(List<ProductsDB> listOfProducts) {
+        this.listOfProducts = listOfProducts;
     }
 
     public UsersDB getUser() {
