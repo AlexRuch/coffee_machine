@@ -1,15 +1,15 @@
 package model;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by alexey on 06/03/16.
  */
 @Entity
-@Table
+@Table(name = "orders")
 public class OrdersDB implements Serializable{
     public OrdersDB(){
 
@@ -19,11 +19,6 @@ public class OrdersDB implements Serializable{
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private long id;
-
-
-//    @ElementCollection
-//    private List<ProductsDB> listOfProducts;
-
 
     public long getId() {
         return id;
@@ -37,18 +32,16 @@ public class OrdersDB implements Serializable{
     @JoinColumn(name = "userId")
     private UsersDB user;
 
+    @ManyToMany(mappedBy = "order")
+    @XmlTransient
+    private List<OrderedProductsDB> product;
 
-
-    @ManyToMany
-    @JoinTable
-    private List<ProductsDB> listOfProducts = new ArrayList<>();
-
-    public List<ProductsDB> getListOfProducts() {
-        return listOfProducts;
+    public List<OrderedProductsDB> getProduct() {
+        return product;
     }
 
-    public void setListOfProducts(List<ProductsDB> listOfProducts) {
-        this.listOfProducts = listOfProducts;
+    public void setProduct(List<OrderedProductsDB> product) {
+        this.product = product;
     }
 
     public UsersDB getUser() {

@@ -28,7 +28,7 @@ public class InteractionProductsDB {
 
     public List<ProductsDB> topping(){
 
-        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'").getResultList();
+        listOfTopping = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'").getResultList();
 
         return listOfTopping;
     }

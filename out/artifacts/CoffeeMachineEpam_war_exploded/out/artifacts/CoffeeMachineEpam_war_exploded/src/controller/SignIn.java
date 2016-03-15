@@ -1,6 +1,7 @@
 package controller;
 
 import interaction.InteractionUsersDB;
+import model.UsersDB;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
@@ -15,21 +16,42 @@ public class SignIn {
 
     }
 
+    private UsersDB user;
     private String userEmail;
     private String userPassword;
+    private String signInResult;
     InteractionUsersDB interactionUsersDB;
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
-
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
     }
+    public String getUserEmail() {
+        return userEmail;
+    }
+    public String getUserPassword() {
+        return userPassword;
+    }
+    public UsersDB getUser() {
+        return user;
+    }
 
-    public void checkUser(){
+    public String checkUser(){
         interactionUsersDB = new InteractionUsersDB();
-        interactionUsersDB.checkUser(userEmail, userPassword);
-
+        user = interactionUsersDB.checkUser(userEmail, userPassword);
+        if(user != null){
+            if(user.getUserGroup().equals("user")){
+                signInResult = "index_user";
+            }
+            else {
+                signInResult = "index_admin";
+            }
+        }
+        else {
+            signInResult = "signInErr";
+        }
+        return signInResult;
     }
 }

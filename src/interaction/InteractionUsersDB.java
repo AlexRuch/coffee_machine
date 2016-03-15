@@ -18,6 +18,9 @@ public class InteractionUsersDB {
     private boolean userStatus;
     protected static UsersDB userDB;
 
+    public static UsersDB getUserDB() {
+        return userDB;
+    }
 
     public void addUser(String userName, String userEmail, String userPassword) throws SystemException, NotSupportedException, HeuristicRollbackException, HeuristicMixedException, RollbackException {
 
@@ -27,26 +30,26 @@ public class InteractionUsersDB {
         user.setUserName(userName);
         user.setUserEmail(userEmail);
         user.setUserPassword(userPassword);
+        user.setUserGroup("user");
+        user.setUserAccount(0);
 
         entityManager.persist(user);
 
         entityManager.getTransaction().commit();
     }
 
-    public boolean checkUser(String userEmail, String userPassword) throws ArrayIndexOutOfBoundsException{
+    public UsersDB checkUser(String userEmail, String userPassword) throws ArrayIndexOutOfBoundsException{
        listOfUsers = entityManager.createQuery("select u from usersEntity u where u.userEmail like ?1 and u.userPassword like ?2", UsersDB.class)
                .setParameter(1, userEmail)
                .setParameter(2, userPassword)
                .getResultList();
 
-       if (listOfUsers.size() == 0){
-           userStatus = false;
-       }
-        else{
-           userStatus = true;
-           userDB = listOfUsers.get(0);
-       }
-        return userStatus;
+        userDB = null;
+        if(listOfUsers.size() != 0){
+            userDB = listOfUsers.get(0);
+            listOfUsers.clear();
+        }
+        return userDB;
     }
 
 }

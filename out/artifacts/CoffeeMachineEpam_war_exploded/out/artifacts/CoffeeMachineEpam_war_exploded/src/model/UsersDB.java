@@ -8,7 +8,7 @@ import java.util.List;
  * jdbc:mysql://localhost:3306/coffee_machine_v2
  */
 @Entity(name = "usersEntity")
-@Table(name = "usersDB")
+@Table(name = "users")
 public class UsersDB {
 
     public UsersDB(){

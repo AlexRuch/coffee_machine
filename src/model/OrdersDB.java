@@ -9,6 +9,7 @@ import java.util.List;
  * Created by alexey on 06/03/16.
  */
 @Entity
+@Table(name = "orders")
 public class OrdersDB implements Serializable{
     public OrdersDB(){
 

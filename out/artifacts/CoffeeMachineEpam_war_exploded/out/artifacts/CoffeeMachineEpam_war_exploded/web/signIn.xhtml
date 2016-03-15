@@ -40,25 +40,19 @@
     <div class="registrationForm">
         <div class="input">
             <h:form>
-                <h:inputText value="#{registration.userEmail}"
+                <h:inputText value="#{signIn.userEmail}"
                              id="userEmail"
-                             a:placeholder="#{msg.userEmail}"
-                             validatorMessage = "#{msg.emailErr}">
-                    <f:validator validatorId="signInValidator"/>
-                    <f:attribute name="check" value="#{signInValidator.submittedValue}" />
-                </h:inputText>
+                             a:placeholder="#{msg.userEmail}"/>
                 <br/>
                 <h:message for="userEmail"/>
                 <br/>
-                <h:inputText a:placeholder="#{msg.userPassword}" id="userPassword" required="true">
-                    <f:validator validatorId="signInValidator" />
-                    <f:attribute name="check" value="#{signInValidator.submittedValue}" />
-                    <f:ajax event="blur" execute="password confirm" render="m_password" />
-                </h:inputText>
-
+                <h:inputText
+                        value="#{signIn.userPassword}"
+                        a:placeholder="#{msg.userPassword}"
+                        id="userPassword"/>
                 <br/>
                 <br/>
-                <h:commandButton value="#{msg.submit}" action="#{registration.saveUser()}"/>
+                <h:commandButton value="#{msg.submit}" action="#{signIn.checkUser}"/>
             </h:form>
         </div>
     </div>

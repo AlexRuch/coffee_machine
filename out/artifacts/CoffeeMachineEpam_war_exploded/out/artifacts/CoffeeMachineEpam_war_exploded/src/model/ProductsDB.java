@@ -8,6 +8,7 @@ import java.util.List;
  * Created by alexey on 02/03/16.
  */
 @Entity(name = "productsEntity")
+@Table(name = "productsEntity")
 public class ProductsDB implements Serializable{
     public ProductsDB(){
 
@@ -29,22 +30,18 @@ public class ProductsDB implements Serializable{
     @Column
     private int    productQuantity;
 
-    @OneToMany(mappedBy = "productsDB")
-    private List<OrderedProductsDB> orderedProductsDB;
+    @OneToMany(mappedBy = "productDB")
+    private List<OrderedProductsDB> orderedProducts;
 
-    public List<OrderedProductsDB> getOrderedProductsDB() {
-        return orderedProductsDB;
+    public List<OrderedProductsDB> getOrderedProducts() {
+        return orderedProducts;
     }
 
-    public void setOrderedProductsDB(List<OrderedProductsDB> orderedProductsDB) {
-        this.orderedProductsDB = orderedProductsDB;
+    public void setOrderedProducts(List<OrderedProductsDB> orderedProducts) {
+        this.orderedProducts = orderedProducts;
     }
 
     public long getId() {return id;}
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getProductName() {
         return productName;

@@ -1,7 +1,6 @@
 package model;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
 import java.util.List;
 
@@ -9,7 +8,7 @@ import java.util.List;
  * Created by alexey on 12/03/16.
  */
 @Entity
-@Table(name = "orderProducts")
+@Table(name = "orderedProducts")
 public class OrderedProductsDB implements Serializable{
 
     @Id

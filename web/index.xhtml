@@ -20,7 +20,6 @@
             <div class="navigation">
                <a href="#">#{msg.catalogCoffee}</a>
                <a href="#">#{msg.catalogTopping}</a>
-               <a href="myBag.xhtml">#{msg.myBag}</a>
                <a href="signIn.xhtml">Sign in</a>
                <a href="registration.xhtml">#{msg.registrationUser}</a>
             </div>
@@ -37,7 +36,6 @@
       </div>
       <div class="content">
 
-         <!-- Данные из бд запихивать в код ниже-->
       <div class="catalog">
          <ul>
             <ui:repeat value="#{interactionProductsDB.coffee()}" var="coffee">
@@ -47,20 +45,14 @@
                        <img src="images/kava.jpg"
                        alt="coffee" width="120"/>
                        <h4>#{coffee.productPrice}</h4>
-
-                       <div class="button_add">
-                          <h:form>
-                          <h:commandLink styleClass="button" value="#{msg.add}" action="#{myBag.addProductInOrder(coffee.id)}"/>
-                          </h:form>
-                       </div>
-
                    </div>
                </li>
             </ui:repeat>
          </ul>
-         </div>
       </div>
-      #{interactionOrdersDB.counter}
+
+      </div>
+
       <div class="footer">
       </div>
   </body>
