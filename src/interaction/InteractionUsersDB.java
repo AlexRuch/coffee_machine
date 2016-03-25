@@ -31,7 +31,7 @@ public class InteractionUsersDB {
         user.setUserEmail(userEmail);
         user.setUserPassword(userPassword);
         user.setUserGroup("user");
-        user.setUserAccount(0);
+        user.setUserAccount(500);
 
         entityManager.persist(user);
 

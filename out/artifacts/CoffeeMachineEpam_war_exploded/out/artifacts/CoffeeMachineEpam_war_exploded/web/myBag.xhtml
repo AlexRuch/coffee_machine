@@ -20,11 +20,12 @@
 
         <div class="topMenu">
             <div class="navigation">
-                <a href="index.xhtml">#{msg.catalogCoffee}</a>
+                <a href="index_user.xhtml">#{msg.catalogCoffee}</a>
                 <a href="#">#{msg.catalogTopping}</a>
-                <a href="#">#{msg.myBag}</a>
+                <a href="myBag.xhtml">#{msg.myBag}</a>
+                <a href="myAccount.xhtml">#{msg.account}</a>
             </div>
-            <div class="lungage">
+            <div class="language">
                 <h:form>
                     <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
                                      valueChangeListener="#{bundle.countryLocaleCodeChanged}">
@@ -48,42 +49,25 @@
                     </h:column>
                     <h:column>
                         <f:facet name="header">#{msg.productCancel}</f:facet>
-                        <h:commandLink value="#{msg.productCancel}" action="#{myBag.deleteProductInOrder(listOfProducts)}"/>
+                        <h:commandLink value="#{msg.productCancel}"
+                                       action="#{myBag.deleteProductInOrder(listOfProducts)}"/>
                     </h:column>
                 </h:dataTable>
                 <br/>
-                <p class="totalCost">#{msg.totalCost}: #{myBag.totalCost()}</p>
+                <p class="totalCost">#{msg.totalCost} #{myBag.user.userName}: #{myBag.totalCost()}</p>
+                <br/>
+                <p>User money :#{myBag.user.userAccount}</p>
                 <br/>
                     <h:form>
-                        <h:commandButton styleClass="button" value="#{msg.buyOrder}" action="#{myBag.confirmOrder()}"/>
+                        <h:commandButton styleClass="button"
+                                         id="buttonConfirmOrder"
+                                         binding="#{myBag.buttonConfirmOrder}"
+                                         value="#{msg.buyOrder}"
+                                         action="#{myBag.confirmOrder()}"/>
+                        <h:message for="buttonConfirmOrder"/>
                     </h:form>
             </h:form>
         </div>
-            <div class="myBagTable">
-                <h:form>
-                    <h:dataTable value="#{interactionOrdersDB.productsDBs}" var="listOfProducts" border="0">
-                        <h:column>
-                            <f:facet name="header">#{msg.productName}</f:facet>
-                            #{listOfProducts.productName}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">#{msg.productPrice}</f:facet>
-                            #{listOfProducts.productPrice}
-                        </h:column>
-                        <h:column>
-                            <f:facet name="header">#{msg.productCancel}</f:facet>
-                            <h:commandLink value="#{msg.productCancel}" action="#{myBag.deleteProductInOrder(listOfProducts)}"/>
-                        </h:column>
-                    </h:dataTable>
-                    <br/>
-                    <p class="totalCost">#{msg.totalCost}: #{myBag.totalCost()}</p>
-                    <br/>
-                    <p>List size :#{myBag.listSize}</p>
-                    <br/>
-                    <p>Order size :#{interactionOrdersDB.orderList}</p>
-                    <br/>
-                </h:form>
-            </div>
         </div>
     </div>
 </body>

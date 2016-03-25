@@ -21,7 +21,7 @@ public class InteractionProductsDB {
 
     public List<ProductsDB> coffee(){
 
-        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee'").getResultList();
+        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee' and p.productQuantity > 0").getResultList();
 
         return listOfCoffee;
     }
@@ -31,5 +31,20 @@ public class InteractionProductsDB {
         listOfTopping = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'").getResultList();
 
         return listOfTopping;
+    }
+
+    private ProductsDB product;
+    public void increaceProductQuantity(long productId){
+
+        product = entityManager.createQuery("select p from productsEntity p where p.id =?1", ProductsDB.class)
+                .setParameter(1, productId)
+                .getResultList().get(0);
+
+        entityManager.getTransaction().begin();
+
+        product.setProductQuantity(product.getProductQuantity() + 1);
+        entityManager.merge(product);
+
+        entityManager.getTransaction().commit();
     }
 }

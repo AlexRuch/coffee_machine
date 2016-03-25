@@ -17,9 +17,10 @@ body{
 }
 .logo{
 	height: 100px;
-	padding-left: 15em;
-	padding-top: 10px;
 	float: left;
+	position: relative;
+	top: 10px;
+	left: 15%;
 }
 .topMenu{
 	padding-top: 60px;
@@ -32,11 +33,15 @@ body{
 	position: relative;
 	left: -100px;
 }
+
+.shapka{
+
+}
 .content{
 	position: relative; /* Относительное позиционирование */
     top: 8.5em; /* Сдвигаем вниз */
 	width: 70%;
-	height: 1900px;
+	height: 1200px;
 	background: #fff;
 	margin: auto;
 	/*
@@ -62,6 +67,20 @@ body{
 	margin: auto;
 	position: relative;
 	left: -70px;
+}
+.settings{
+	position: relative;
+	width: 70%;
+	left: 0px;
+	margin: auto;
+	text-align: right;
+}
+.settings a{
+	margin: 10px;
+	font-size: 16px;
+	text-align: left;
+	position: relative;
+	left: 10px;
 }
 
 a{
@@ -142,4 +161,65 @@ li {
 	position: relative; /* Относительное позиционирование */
 	top: 15em; /* Сдвигаем вниз */
 	margin: auto;
+}
+
+table{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	background: #FFF;
+	max-width: 90%;
+	width: 90%;
+	border-collapse: collapse;
+	text-align: left;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+}
+
+th{
+	font-weight: normal;
+	color: #666;
+	padding: 10px 15px;
+}
+td{
+	color: #666;
+	border-top: 1px solid #999;
+	padding: 10px 15px;
+}
+tr:hover td{
+	background: #fafafa;
+}
+
+div.myBagTable{
+
+	padding-top: 5.5em;
+	padding-left: 10%;
+}
+
+.myBagContent{
+	position: relative; /* Относительное позиционирование */
+	top: 1.8em; /* Сдвигаем вниз */
+	width: 70%;
+	height: 1200px;
+	background: #fff;
+	margin: auto;
+	/*
+	box-shadow: 0.3em 0.3em 5px rgba(122,122,122,0.5);
+	*/
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	z-index: 1;
+}
+
+.language {
+	float: right;
+	position: relative;
+	top: 10px;
+	left: -15%;
+}
+
+.adminTable{
+	position: relative;
+	top: 5em;
+	width: 70%;
+	margin: auto;
+	text-align: center;
+
 }

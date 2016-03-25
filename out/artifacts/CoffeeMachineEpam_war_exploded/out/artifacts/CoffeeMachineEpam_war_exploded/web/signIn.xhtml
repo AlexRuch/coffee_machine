@@ -24,9 +24,8 @@
             <div class="navigation">
                 <a href="index.xhtml">#{msg.catalogCoffee}</a>
                 <a href="#">#{msg.catalogTopping}</a>
-                <a href="#">#{msg.myBag}</a>
             </div>
-            <div class="lungage">
+            <div class="language">
                 <h:form>
                     <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
                                      valueChangeListener="#{bundle.countryLocaleCodeChanged}">
@@ -52,7 +51,7 @@
                         id="userPassword"/>
                 <br/>
                 <br/>
-                <h:commandButton value="#{msg.submit}" action="#{signIn.checkUser}"/>
+                <h:commandButton value="#{msg.submit}" action="#{signIn.checkUser(signIn.userEmail, signIn.userPassword)}"/>
             </h:form>
         </div>
     </div>

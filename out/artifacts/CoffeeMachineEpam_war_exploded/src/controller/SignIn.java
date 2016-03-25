@@ -34,13 +34,22 @@ public class SignIn {
     public String getUserPassword() {
         return userPassword;
     }
-    public UsersDB getUser() {
-        return user;
+
+    private long userId;
+
+    public long getUserId() {
+        return userId;
     }
+
+    public static long StaticUserId;
 
     public String checkUser(String userEmail, String userPassword){
         user = interactionUsersDB.checkUser(userEmail, userPassword);
         if(user != null){
+
+            userId = user.getId();
+            StaticUserId = userId;
+
             if(user.getUserGroup().equals("user")){
                 return "index_user";
             }

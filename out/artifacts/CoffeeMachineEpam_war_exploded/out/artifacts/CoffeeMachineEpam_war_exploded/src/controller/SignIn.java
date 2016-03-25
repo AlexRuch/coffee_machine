@@ -20,7 +20,7 @@ public class SignIn {
     private String userEmail;
     private String userPassword;
     private String signInResult;
-    InteractionUsersDB interactionUsersDB;
+    InteractionUsersDB interactionUsersDB = new InteractionUsersDB();
 
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
@@ -34,24 +34,31 @@ public class SignIn {
     public String getUserPassword() {
         return userPassword;
     }
-    public UsersDB getUser() {
-        return user;
+
+    private long userId;
+
+    public long getUserId() {
+        return userId;
     }
 
-    public String checkUser(){
-        interactionUsersDB = new InteractionUsersDB();
+    public static long StaticUserId;
+
+    public String checkUser(String userEmail, String userPassword){
         user = interactionUsersDB.checkUser(userEmail, userPassword);
         if(user != null){
+
+            userId = user.getId();
+            StaticUserId = userId;
+
             if(user.getUserGroup().equals("user")){
-                signInResult = "index_user";
+                return "index_user";
             }
             else {
-                signInResult = "index_admin";
+                return "index_admin";
             }
         }
         else {
-            signInResult = "signInErr";
+            return "signInErr";
         }
-        return signInResult;
     }
 }

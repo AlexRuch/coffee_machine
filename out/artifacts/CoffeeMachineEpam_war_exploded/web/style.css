@@ -17,9 +17,10 @@ body{
 }
 .logo{
 	height: 100px;
-	padding-left: 15em;
-	padding-top: 10px;
 	float: left;
+	position: relative;
+	top: 10px;
+	left: 15%;
 }
 .topMenu{
 	padding-top: 60px;
@@ -31,6 +32,10 @@ body{
 	font-size: 20px;
 	position: relative;
 	left: -100px;
+}
+
+.shapka{
+
 }
 .content{
 	position: relative; /* Относительное позиционирование */
@@ -62,6 +67,20 @@ body{
 	margin: auto;
 	position: relative;
 	left: -70px;
+}
+.settings{
+	position: relative;
+	width: 70%;
+	left: 0px;
+	margin: auto;
+	text-align: right;
+}
+.settings a{
+	margin: 10px;
+	font-size: 16px;
+	text-align: left;
+	position: relative;
+	left: 10px;
 }
 
 a{
@@ -187,4 +206,20 @@ div.myBagTable{
 	*/
 	box-shadow: 0 0 5px rgba(122,122,122,0.5);
 	z-index: 1;
+}
+
+.language {
+	float: right;
+	position: relative;
+	top: 10px;
+	left: -15%;
+}
+
+.adminTable{
+	position: relative;
+	top: 5em;
+	width: 70%;
+	margin: auto;
+	text-align: center;
+
 }

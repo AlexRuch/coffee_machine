@@ -1,5 +1,6 @@
 package interaction;
 
+import controller.SignIn;
 import model.OrderedProductsDB;
 import model.OrdersDB;
 import model.ProductsDB;
@@ -17,22 +18,20 @@ import java.util.List;
 @ManagedBean
 public class InteractionOrdersDB {
     public InteractionOrdersDB(){}
-    private static int counter = 0;
 
-    private static List<ProductsDB> listOfProducts;
+/*
+    <CONFIRM USER ORDER>
+     */
 
+    private static SignIn signIn = new SignIn();
     public static void setListOfProducts(List<ProductsDB> listOfProducts) {
         InteractionOrdersDB.listOfProducts = listOfProducts;
     }
 
-    public int getCounter() {
-        return counter;
-    }
+    private static List<ProductsDB> listOfProducts;
 
     public static void confirmOrder(){
         EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
-
-
 
         OrdersDB ordersDB;
         OrderedProductsDB orderedProductsDB;
@@ -47,6 +46,7 @@ public class InteractionOrdersDB {
 
             orderedProductsDB.setProductDB(product);
             product.getOrderedProducts().add(orderedProductsDB);
+            product.setProductQuantity(product.getProductQuantity() -1);
 
             entityManager.persist(orderedProductsDB);
             entityManager.merge(product);
@@ -60,21 +60,24 @@ public class InteractionOrdersDB {
         ordersDB = new OrdersDB();
         entityManager.persist(ordersDB);
         UsersDB user;
-        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, 1).getResultList().get(0));
-        ordersDB.setUser(user);
-        for(OrderedProductsDB orderedProduct : listOfOrderedProducts) {
 
+        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
+        ordersDB.setUser(user);
+
+        for(OrderedProductsDB orderedProduct : listOfOrderedProducts) {
 
             ordersDB.getProduct().add(orderedProduct);
             orderedProduct.getOrder().add(ordersDB);
 
             entityManager.merge(ordersDB);
             entityManager.merge(orderedProduct);
-
-
-            counter++;
         }
         entityManager.getTransaction().commit();
-
     }
+/*
+    </CONFIRM USER ORDER>
+     */
+
+
+
 }

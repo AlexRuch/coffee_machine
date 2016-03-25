@@ -46,6 +46,7 @@ public class InteractionOrdersDB {
 
             orderedProductsDB.setProductDB(product);
             product.getOrderedProducts().add(orderedProductsDB);
+            product.setProductQuantity(product.getProductQuantity() -1);
 
             entityManager.persist(orderedProductsDB);
             entityManager.merge(product);
@@ -58,8 +59,9 @@ public class InteractionOrdersDB {
         entityManager.getTransaction().begin();
         ordersDB = new OrdersDB();
         entityManager.persist(ordersDB);
-        UsersDB user = signIn.getUser();
-        //user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, 1).getResultList().get(0));
+        UsersDB user;
+
+        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
         ordersDB.setUser(user);
 
         for(OrderedProductsDB orderedProduct : listOfOrderedProducts) {

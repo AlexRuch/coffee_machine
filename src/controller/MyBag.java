@@ -6,9 +6,11 @@ package controller;
 
 import interaction.InteractionOrdersDB;
 import model.ProductsDB;
+import model.UsersDB;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.component.UIComponent;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import java.util.ArrayList;
@@ -27,17 +29,16 @@ public class MyBag {
     }
     private EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
     private List<ProductsDB> listOfUserOrder = new ArrayList<>();
-    private InteractionOrdersDB interactionOrdersDB = new InteractionOrdersDB();
     private float orderCost;
-    private int listSize =0;
-
-    public int getListSize() {
-        return listSize;
-    }
-
-    public float getOrderCost() {
-        return orderCost;
-    }
+//    private int listSize =0;
+//
+//    public int getListSize() {
+//        return listSize;
+//    }
+//
+//    public float getOrderCost() {
+//        return orderCost;
+//    }
 
     // for show products in user bag
     public List<ProductsDB> getListOfUserOrder() {
@@ -63,11 +64,37 @@ public class MyBag {
         return orderCost;
     }
 
+    private UIComponent buttonConfirmOrder;
+
+    public UIComponent getButtonConfirmOrder() {
+        return buttonConfirmOrder;
+    }
+
+    public void setButtonConfirmOrder(UIComponent buttonConfirmOrder) {
+        this.buttonConfirmOrder = buttonConfirmOrder;
+    }
+
+    UsersDB user;
+
+    public UsersDB getUser() {
+        return user;
+    }
+
     public String confirmOrder(){
 
-        InteractionOrdersDB.setListOfProducts(listOfUserOrder);
-        InteractionOrdersDB.confirmOrder();
+        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
 
-        return "index";
+        if(orderCost < user.getUserAccount()) {
+            InteractionOrdersDB.setListOfProducts(listOfUserOrder);
+            InteractionOrdersDB.confirmOrder();
+            return "index_user";
+        }
+        else {
+//            FacesMessage facesMessage = new FacesMessage("Not enough money");
+//            FacesContext facesContext = FacesContext.getCurrentInstance();
+//            facesContext.addMessage(buttonConfirmOrder.getClientId(facesContext), facesMessage);
+            return "myBag";
+        }
+
     }
 }

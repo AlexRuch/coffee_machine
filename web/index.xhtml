@@ -11,28 +11,32 @@
 </head>
   <body>
       <div class="header">
+          <div class="language">
+              <h:form>
+                  <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
+                                   valueChangeListener="#{bundle.countryLocaleCodeChanged}">
+                      <f:selectItems value="#{bundle.countriesInMap}" />
+                  </h:selectOneMenu>
+              </h:form>
+          </div>
+
+          <div class="shapka">
          <div class="logo">
             <img src="images/logo_mini.png" height="100px"/>
-
          </div>
 
          <div class="topMenu">
             <div class="navigation">
-               <a href="#">#{msg.catalogCoffee}</a>
-               <a href="#">#{msg.catalogTopping}</a>
-               <a href="signIn.xhtml">Sign in</a>
-               <a href="registration.xhtml">#{msg.registrationUser}</a>
+                <a href="#">#{msg.catalogCoffee}</a>
+                <a href="#">#{msg.catalogTopping}</a>
             </div>
-            <div class="lungage">
-               <h:form>
-                  <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
-                                   valueChangeListener="#{bundle.countryLocaleCodeChanged}">
-                     <f:selectItems value="#{bundle.countriesInMap}" />
-                  </h:selectOneMenu>
-               </h:form>
+                <br/>
+            <div class="settings">
+                    <a href="signIn.xhtml">#{msg.signIn}</a>
+                    <a href="registration.xhtml">#{msg.registrationUser}</a>
             </div>
          </div>
-
+      </div>
       </div>
       <div class="content">
 

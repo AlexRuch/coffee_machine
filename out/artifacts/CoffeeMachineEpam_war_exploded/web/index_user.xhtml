@@ -11,9 +11,17 @@
     </head>
     <body>
     <div class="header">
+        <div class="language">
+            <h:form>
+                <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
+                                 valueChangeListener="#{bundle.countryLocaleCodeChanged}">
+                    <f:selectItems value="#{bundle.countriesInMap}" />
+                </h:selectOneMenu>
+            </h:form>
+        </div>
+
         <div class="logo">
             <img src="images/logo_mini.png" height="100px"/>
-
         </div>
 
         <div class="topMenu">
@@ -21,22 +29,16 @@
                 <a href="index_user.xhtml">#{msg.catalogCoffee}</a>
                 <a href="#">#{msg.catalogTopping}</a>
                 <a href="myBag.xhtml">#{msg.myBag}</a>
+                <a href="myAccount.xhtml">#{msg.account}</a>
+            </div>
+            <br/>
+            <div class="settings">
                 <a href="index.xhtml">#{msg.logOut}</a>
             </div>
-            <div class="lungage">
-                <h:form>
-                    <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
-                                     valueChangeListener="#{bundle.countryLocaleCodeChanged}">
-                        <f:selectItems value="#{bundle.countriesInMap}" />
-                    </h:selectOneMenu>
-                </h:form>
-            </div>
         </div>
-
     </div>
     <div class="content">
 
-        <!-- Данные из бд запихивать в код ниже-->
         <div class="catalog">
             <ul>
                 <ui:repeat value="#{interactionProductsDB.coffee()}" var="coffee">
@@ -49,7 +51,9 @@
 
                             <div class="button_add">
                                 <h:form>
-                                    <h:commandLink styleClass="button" value="#{msg.add}" action="#{myBag.addProductInOrder(coffee.id)}"/>
+                                    <h:commandLink styleClass="button"
+                                                   value="#{msg.add}"
+                                                   action="#{myBag.addProductInOrder(coffee.id)}"/>
                                 </h:form>
                             </div>
 
@@ -60,6 +64,7 @@
         </div>
     </div>
     <div class="footer">
+        #{signIn.userId}
     </div>
     </body>
 </f:view>

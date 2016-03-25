@@ -18,6 +18,9 @@ public class InteractionUsersDB {
     private boolean userStatus;
     protected static UsersDB userDB;
 
+    public static UsersDB getUserDB() {
+        return userDB;
+    }
 
     public void addUser(String userName, String userEmail, String userPassword) throws SystemException, NotSupportedException, HeuristicRollbackException, HeuristicMixedException, RollbackException {
 
@@ -28,7 +31,7 @@ public class InteractionUsersDB {
         user.setUserEmail(userEmail);
         user.setUserPassword(userPassword);
         user.setUserGroup("user");
-        user.setUserAccount(0);
+        user.setUserAccount(500);
 
         entityManager.persist(user);
 
