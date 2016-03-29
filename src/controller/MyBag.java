@@ -65,21 +65,14 @@ public class MyBag {
     }
 
     private UIComponent buttonConfirmOrder;
-
     public UIComponent getButtonConfirmOrder() {
         return buttonConfirmOrder;
     }
-
     public void setButtonConfirmOrder(UIComponent buttonConfirmOrder) {
         this.buttonConfirmOrder = buttonConfirmOrder;
     }
 
     UsersDB user;
-
-    public UsersDB getUser() {
-        return user;
-    }
-
     public String confirmOrder(){
 
         user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
@@ -96,5 +89,10 @@ public class MyBag {
             return "myBag";
         }
 
+    }
+    public UsersDB userInfo(){
+        return user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class)
+                .setParameter(1, SignIn.StaticUserId)
+                .getResultList().get(0));
     }
 }

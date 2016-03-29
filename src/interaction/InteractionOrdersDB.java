@@ -10,7 +10,9 @@ import javax.faces.bean.ManagedBean;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by alexey on 06/03/16.
@@ -29,8 +31,45 @@ public class InteractionOrdersDB {
     }
 
     private static List<ProductsDB> listOfProducts;
+    private static Map<ProductsDB, Integer>productsCounterMap = new HashMap<>();
+
 
     public static void confirmOrder(){
+        int productEnable = 0;
+        /*
+        * Products counter
+        */
+        for (ProductsDB productsDB :listOfProducts){
+            if(productsCounterMap.containsKey(productsDB)){
+                productsCounterMap.replace(productsDB, productsCounterMap.get(productsDB)+1);
+            }
+            else {
+                productsCounterMap.put(productsDB, 1);
+            }
+        }
+
+// СДЕЛАТЬ ПЕРЕБОР ЭЛЕМЕНТОВ В ХЭШЕ И ПРОВЕРИТЬ КОЛИЧЕСВО ПРОДУКТА В ЗАКАЗЕ И ЕГО КОЛИЧЕСТВО В НАЛИЧИЕ
+        ProductsDB productsDB;
+         int statusOrder;
+         int finalStatusOrder = 1;
+  for(Map.Entry productsMap : productsCounterMap.entrySet()){
+      productsDB = (ProductsDB) productsMap.getKey();
+      int quantityInOrder = (int) productsMap.getValue();
+            if(quantityInOrder > productsDB.getProductQuantity()){
+                statusOrder = 0;
+            }
+      else {
+                statusOrder = 1;
+            }
+      finalStatusOrder = finalStatusOrder * statusOrder;
+        }
+        if (finalStatusOrder == 1){
+            confirmedOrder();
+        }
+        productsCounterMap.clear();
+    }
+
+    private static void confirmedOrder(){
         EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
 
         OrdersDB ordersDB;
@@ -61,7 +100,9 @@ public class InteractionOrdersDB {
         entityManager.persist(ordersDB);
         UsersDB user;
 
-        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
+        user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class)
+                .setParameter(1, SignIn.StaticUserId)
+                .getResultList().get(0));
         ordersDB.setUser(user);
 
         for(OrderedProductsDB orderedProduct : listOfOrderedProducts) {

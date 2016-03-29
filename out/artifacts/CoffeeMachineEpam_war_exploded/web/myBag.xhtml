@@ -54,9 +54,10 @@
                     </h:column>
                 </h:dataTable>
                 <br/>
-                <p class="totalCost">#{msg.totalCost} #{myBag.user.userName}: #{myBag.totalCost()}</p>
+                <p class="totalCost">#{msg.totalCost} #{myBag.userInfo().userName}: #{myBag.totalCost()}</p>
                 <br/>
-                <p>User money :#{myBag.user.userAccount}</p>
+                <p>User money :#{myBag.userInfo().userAccount}</p>
+                <h:commandButton value="refresh" action="#{myBag.userInfo}"/>
                 <br/>
                     <h:form>
                         <h:commandButton styleClass="button"
@@ -69,6 +70,7 @@
             </h:form>
         </div>
         </div>
+
     </div>
 </body>
 </f:view>
