@@ -121,6 +121,36 @@ public class InteractionOrdersDB {
     </CONFIRM USER ORDER>
      */
 
+/*
+    <ORDERS IN ADMIN PANEL>
+    */
 
+    EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
+    public List<OrdersDB> allOrders(){
 
+        return entityManager.createQuery("select o from ordersEntity o", OrdersDB.class)
+                .getResultList();
+    }
+
+    private List<OrderedProductsDB> orderedProductsList;
+    public List<ProductsDB> productsInOrderList;
+    public List<ProductsDB> getProductsInOrderList() {
+        return productsInOrderList;
+    }
+
+    public String orderDetails(long orderId){
+        orderedProductsList = entityManager.createQuery("select o from ordersEntity o where o.id = ?1", OrdersDB.class)
+                .setParameter(1, orderId)
+                .getResultList().get(0)
+                .getProduct();
+        for (OrderedProductsDB orderedProduct : orderedProductsList){
+            productsInOrderList.add(orderedProduct.getProductDB());
+        }
+
+        return "adminOrderDetails";
+    }
+
+/*
+    <ORDERS IN ADMIN PANEL>
+    */
 }

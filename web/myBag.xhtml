@@ -14,6 +14,16 @@
 </head>
 <body>
     <div class="header">
+        <div class="language">
+            <h:form>
+                <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
+                                 valueChangeListener="#{bundle.countryLocaleCodeChanged}">
+                    <f:selectItems value="#{bundle.countriesInMap}" />
+                </h:selectOneMenu>
+            </h:form>
+        </div>
+
+    <div class="shapka">
         <div class="logo">
             <img src="images/logo_mini.png" height="100px" alt=" "/>
         </div>
@@ -25,17 +35,10 @@
                 <a href="myBag.xhtml">#{msg.myBag}</a>
                 <a href="myAccount.xhtml">#{msg.account}</a>
             </div>
-            <div class="language">
-                <h:form>
-                    <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
-                                     valueChangeListener="#{bundle.countryLocaleCodeChanged}">
-                        <f:selectItems value="#{bundle.countriesInMap}" />
-                    </h:selectOneMenu>
-                </h:form>
-            </div>
         </div>
-
-        <div class="myBagContent">
+    </div>
+    </div>
+    <div class="content">
         <div class="myBagTable">
             <h:form>
                 <h:dataTable value="#{myBag.listOfUserOrder}" var="listOfProducts" border="0">
@@ -66,8 +69,6 @@
                     </h:form>
             </h:form>
         </div>
-        </div>
-
     </div>
 </body>
 </f:view>

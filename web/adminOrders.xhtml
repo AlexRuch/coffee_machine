@@ -20,15 +20,14 @@
                 </h:selectOneMenu>
             </h:form>
         </div>
-
         <div class="shapka">
             <div class="logo">
                 <img src="images/logo_mini.png" height="100px"/>
             </div>
-
             <div class="topMenu">
                 <div class="navigation">
-                    <a href="#">#{msg.adminOrders}</a>
+                    <a href="adminOrders.xhtml">#{msg.adminOrders}</a>
+                    <a href="index_admin.xhtml">#{msg.adminProducts}</a>
                 </div>
                 <br/>
                 <div class="settings">
@@ -37,24 +36,19 @@
             </div>
         </div>
     </div>
+
     <div class="content">
-        <!--<div class="adminTable">-->
         <h:form>
-            <h:dataTable value="#{interactionProductsDB.adminCoffee()}" var="coffee" border="0" styleClass="adminTable">
+            <h:dataTable value="#{interactionOrdersDB.allOrders()}" var="order" border="0" styleClass="adminTable">
                 <h:column>
-                    <f:facet name="header">#{msg.productName}</f:facet>
-                    #{coffee.productName}
+                    <f:facet name="#{msg.adminOrderId}"/>
+                    #{order.id}
                 </h:column>
                 <h:column>
-                    <f:facet name="header">#{msg.quantity}</f:facet>
-                    #{coffee.productQuantity}
-                </h:column>
-                <h:column>
-                    <h:commandButton value="#{msg.add}" action="#{adminControl.increaseQuantity(coffee.id)}"/>
+                    <h:commandButton value="#{msg.adminOrderMore}" action="#{interactionOrdersDB.orderDetails(order.id)}"/>
                 </h:column>
             </h:dataTable>
         </h:form>
-        <!--</div>-->
     </div>
 
     <div class="footer">

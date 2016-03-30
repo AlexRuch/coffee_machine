@@ -21,14 +21,23 @@ public class InteractionProductsDB {
 
     public List<ProductsDB> coffee(){
 
-        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee' and p.productQuantity > 0").getResultList();
+        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee' and p.productQuantity > 0")
+                .getResultList();
+
+        return listOfCoffee;
+    }
+
+    public List<ProductsDB> adminCoffee(){
+        listOfCoffee = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'coffee'")
+                .getResultList();
 
         return listOfCoffee;
     }
 
     public List<ProductsDB> topping(){
 
-        listOfTopping = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'").getResultList();
+        listOfTopping = entityManager.createQuery("select p from productsEntity p where p.productGroup like 'topping'")
+                .getResultList();
 
         return listOfTopping;
     }

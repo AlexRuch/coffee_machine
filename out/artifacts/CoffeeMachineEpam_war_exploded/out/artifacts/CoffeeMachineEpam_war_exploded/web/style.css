@@ -24,18 +24,14 @@ body{
 }
 .topMenu{
 	padding-top: 60px;
-	text-align: center
+	text-align: center;
 }
 .topMenu a{
-	margin: 50px;
+	margin: 20px;
 	color: #666;
-	font-size: 20px;
+	font-size: 18px;
 	position: relative;
 	left: -100px;
-}
-
-.shapka{
-
 }
 .content{
 	position: relative; /* Относительное позиционирование */
@@ -65,8 +61,9 @@ body{
 
 .navigation{
 	margin: auto;
-	position: relative;
-	left: -70px;
+	/*position: relative;*/
+	/*left: -70px;*/
+	float: left;
 }
 .settings{
 	position: relative;

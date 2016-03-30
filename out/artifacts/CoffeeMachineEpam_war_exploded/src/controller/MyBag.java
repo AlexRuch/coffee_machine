@@ -91,6 +91,8 @@ public class MyBag {
 
     }
     public UsersDB userInfo(){
-        return user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class).setParameter(1, SignIn.StaticUserId).getResultList().get(0));
+        return user = (entityManager.createQuery("select u from usersEntity u where u.id = ?1 ", UsersDB.class)
+                .setParameter(1, SignIn.StaticUserId)
+                .getResultList().get(0));
     }
 }

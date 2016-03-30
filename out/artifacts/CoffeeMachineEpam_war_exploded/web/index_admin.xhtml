@@ -40,7 +40,7 @@
     <div class="content">
         <!--<div class="adminTable">-->
         <h:form>
-            <h:dataTable value="#{interactionProductsDB.coffee()}" var="coffee" border="0" styleClass="adminTable">
+            <h:dataTable value="#{interactionProductsDB.adminCoffee()}" var="coffee" border="0" styleClass="adminTable">
                 <h:column>
                     <f:facet name="header">#{msg.productName}</f:facet>
                     #{coffee.productName}
