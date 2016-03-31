@@ -20,16 +20,13 @@
                 </h:selectOneMenu>
             </h:form>
         </div>
-
         <div class="shapka">
             <div class="logo">
                 <img src="images/logo_mini.png" height="100px"/>
             </div>
-
             <div class="topMenu">
                 <div class="navigation">
-                    <a href="adminOrders.xhtml">#{msg.adminOrders}</a>
-                    <a href="index_admin.xhtml">#{msg.adminProducts}</a>
+                    <a href="#">#{msg.adminOrders}</a>
                 </div>
                 <br/>
                 <div class="settings">
@@ -38,21 +35,16 @@
             </div>
         </div>
     </div>
+
     <div class="content">
         <h:form>
-            <h:dataTable value="#{interactionProductsDB.adminCoffee()}" var="coffee" border="0" styleClass="adminTable">
+            <h:dataTable value="#{interactionOrdersDB.productsInOrderList}" var="product" border="0" styleClass="adminTable">
                 <h:column>
                     <f:facet name="header">#{msg.productName}</f:facet>
-                    #{coffee.productName}
-                </h:column>
-                <h:column>
-                    <f:facet name="header">#{msg.quantity}</f:facet>
-                    #{coffee.productQuantity}
-                </h:column>
-                <h:column>
-                    <h:commandButton value="#{msg.add}" action="#{interactionProductsDB.increaceProductQuantity(coffee.id)}"/>
+                    #{product.productName}
                 </h:column>
             </h:dataTable>
+            <a href="adminOrders.xhtml">#{msg.back}</a>
         </h:form>
     </div>
 

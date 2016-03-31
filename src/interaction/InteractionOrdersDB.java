@@ -121,36 +121,50 @@ public class InteractionOrdersDB {
     </CONFIRM USER ORDER>
      */
 
+
 /*
     <ORDERS IN ADMIN PANEL>
     */
-
-    EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
-    public List<OrdersDB> allOrders(){
-
-        return entityManager.createQuery("select o from ordersEntity o", OrdersDB.class)
-                .getResultList();
-    }
-
     private List<OrderedProductsDB> orderedProductsList;
     public List<ProductsDB> productsInOrderList;
     public List<ProductsDB> getProductsInOrderList() {
         return productsInOrderList;
     }
 
-    public String orderDetails(long orderId){
-        orderedProductsList = entityManager.createQuery("select o from ordersEntity o where o.id = ?1", OrdersDB.class)
-                .setParameter(1, orderId)
-                .getResultList().get(0)
-                .getProduct();
-        for (OrderedProductsDB orderedProduct : orderedProductsList){
-            productsInOrderList.add(orderedProduct.getProductDB());
-        }
+    private int orderedProductSize;
 
+    public int getOrderedProductSize() {
+        return orderedProductSize;
+    }
+
+    EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
+
+    public List<OrdersDB> allOrders(){
+
+        return entityManager.createQuery("select o from ordersEntity o", OrdersDB.class)
+                .getResultList();
+    }
+
+    public String orderDetails(long orderId){
+
+        OrdersDB order = entityManager.createQuery("select o from ordersEntity o where o.id = ?1", OrdersDB.class)
+               .setParameter(1, orderId)
+               .getResultList().get(0);
+        orderedProductsList = order.getProduct();
+        orderedProductSize = orderedProductsList.size();
+
+        productsInOrderList = new ArrayList<>();
+        entityManager.getTransaction().begin();
+        for(OrderedProductsDB orderedProductsDB: orderedProductsList){
+           productsInOrderList.add(orderedProductsDB.getProductDB());
+        }
+        entityManager.getTransaction().commit();
         return "adminOrderDetails";
+//        return "adminOrders";
     }
 
 /*
     <ORDERS IN ADMIN PANEL>
     */
+
 }

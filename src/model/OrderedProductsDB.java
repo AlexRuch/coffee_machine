@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by alexey on 12/03/16.
  */
-@Entity
+@Entity(name = "orderedProductsEntity")
 @Table(name = "orderedProducts")
 public class OrderedProductsDB implements Serializable{
 

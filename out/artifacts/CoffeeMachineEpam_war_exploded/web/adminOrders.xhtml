@@ -20,12 +20,10 @@
                 </h:selectOneMenu>
             </h:form>
         </div>
-
         <div class="shapka">
             <div class="logo">
                 <img src="images/logo_mini.png" height="100px"/>
             </div>
-
             <div class="topMenu">
                 <div class="navigation">
                     <a href="adminOrders.xhtml">#{msg.adminOrders}</a>
@@ -38,11 +36,23 @@
             </div>
         </div>
     </div>
-    <div class="content">
 
+    <div class="content">
+        <h:form>
+            <h:dataTable value="#{interactionOrdersDB.allOrders()}" var="order" border="0" styleClass="adminTable">
+                <h:column>
+                    <f:facet name="#{msg.adminOrderId}"/>
+                    #{order.id}
+                </h:column>
+                <h:column>
+                    <h:commandButton value="#{msg.adminOrderMore}" action="#{interactionOrdersDB.orderDetails(order.id)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
     </div>
 
     <div class="footer">
+        #{interactionOrdersDB.orderedProductSize}
     </div>
     </body>
 </f:view>
