@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 <f:loadBundle  basename="res/text" var="msg"/>
 <f:view locale="#{bundle.localeCode}">
 <head>
    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
    <title>Coffee Machine</title>
    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jqueryrotate.2.1.js"></script>
+    <script src="js/script.js"></script>
 </head>
   <body>
       <div class="header">
@@ -32,9 +36,31 @@
             </div>
                 <br/>
             <div class="settings">
-                    <a href="signIn.xhtml">#{msg.signIn}</a>
+                    <a href="#" id="signInIndex">#{msg.signIn}</a>
                     <a href="registration.xhtml">#{msg.registrationUser}</a>
             </div>
+             <div id="signInPanel">
+                 <div class="signInForm">
+                     <h:form>
+                         <h:inputText value="#{signIn.userEmail}"
+                                      id="userEmail"
+                                      a:placeholder="#{msg.userEmail}"
+                                      validatorMessage = "#{msg.emailErr}">
+                             <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+                         </h:inputText>
+                         <br/>
+                         <h:message for="userEmail"/>
+                         <br/>
+                         <h:inputText
+                                 value="#{signIn.userPassword}"
+                                 a:placeholder="#{msg.userPassword}"
+                                 id="userPassword"/>
+                         <br/>
+                         <br/>
+                         <h:commandButton value="#{msg.submit}" action="#{signIn.checkUser(signIn.userEmail, signIn.userPassword)}"/>
+                     </h:form>
+                 </div>
+             </div>
          </div>
       </div>
       </div>

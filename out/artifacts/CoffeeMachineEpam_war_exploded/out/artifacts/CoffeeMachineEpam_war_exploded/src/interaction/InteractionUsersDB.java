@@ -31,7 +31,7 @@ public class InteractionUsersDB {
         user.setUserEmail(userEmail);
         user.setUserPassword(userPassword);
         user.setUserGroup("user");
-        user.setUserAccount(0);
+        user.setUserAccount(500);
 
         entityManager.persist(user);
 
@@ -50,6 +50,11 @@ public class InteractionUsersDB {
             listOfUsers.clear();
         }
         return userDB;
+    }
+
+    public void addMoney(float money){
+        UsersDB user = (UsersDB)entityManager.createQuery("select u from usersEntity u ").getResultList().get(0);
+
     }
 
 }

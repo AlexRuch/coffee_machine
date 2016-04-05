@@ -41,7 +41,10 @@
             <h:form>
                 <h:inputText value="#{signIn.userEmail}"
                              id="userEmail"
-                             a:placeholder="#{msg.userEmail}"/>
+                             a:placeholder="#{msg.userEmail}"
+                             validatorMessage = "#{msg.emailErr}">
+                    <f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+                </h:inputText>
                 <br/>
                 <h:message for="userEmail"/>
                 <br/>

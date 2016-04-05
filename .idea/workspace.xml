@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ac023d5-fa18-4e57-8d07-b64a70aff418" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/script.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/controller/WorkWithSession.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/interactionProductsDB.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/validation/SignInValidator.class" afterPath="" />
@@ -16,40 +17,23 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/controller/WorkWithSession.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/interactionProductsDB.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/validation/SignInValidator.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionOrdersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionOrdersDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/model/OrderedProductsDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/model/OrderedProductsDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/model/OrdersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/model/OrdersDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionOrdersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionOrdersDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/interaction/InteractionOrdersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/interaction/InteractionOrdersDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/InteractionOrdersDB.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/InteractionOrdersDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/model/OrderedProductsDB.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/model/OrderedProductsDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/model/OrdersDB.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/model/OrdersDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionUsersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionUsersDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionUsersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/interaction/InteractionUsersDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/interaction/InteractionUsersDB.class" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/interaction/InteractionUsersDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/InteractionUsersDB.class" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/interaction/InteractionUsersDB.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/WEB-INF/classes/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionOrdersDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionOrdersDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionOrdersDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionOrdersDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/model/OrderedProductsDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/model/OrderedProductsDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/model/OrdersDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/model/OrdersDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/adminOrders.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/adminOrders.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index_admin.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index_admin.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text.properties" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" afterPath="$PROJECT_DIR$/out/production/CoffeeMachineEpam/res/text_ru_RU.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java" afterPath="$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/OrderedProductsDB.java" afterPath="$PROJECT_DIR$/src/model/OrderedProductsDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/adminOrders.xhtml" afterPath="$PROJECT_DIR$/web/adminOrders.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index_admin.xhtml" afterPath="$PROJECT_DIR$/web/index_admin.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionUsersDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionUsersDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionUsersDB.java" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/src/interaction/InteractionUsersDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/index.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/myAccount.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/myAccount.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/signIn.xhtml" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/signIn.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" afterPath="$PROJECT_DIR$/out/artifacts/CoffeeMachineEpam_war_exploded/web/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/interaction/InteractionUsersDB.java" afterPath="$PROJECT_DIR$/src/interaction/InteractionUsersDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/myAccount.xhtml" afterPath="$PROJECT_DIR$/web/myAccount.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/signIn.xhtml" afterPath="$PROJECT_DIR$/web/signIn.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/style.css" afterPath="$PROJECT_DIR$/web/style.css" />
     </list>
     <ignored path="CoffeeMachineEpam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,107 +76,41 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state vertical-scroll-proportion="-8.666667">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InteractionOrdersDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+            <state vertical-scroll-proportion="-6.196429">
+              <caret line="231" column="7" selection-start-line="231" selection-start-column="7" selection-end-line="231" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coffee_machine_v2.productsEntity" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.productsEntity">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coffee_machine_v2.ORDER_PRODUCT" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.ORDER_PRODUCT">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderedProductsDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/OrderedProductsDB.java">
+      <file leaf-file-name="signIn.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/signIn.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_admin.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index_admin.xhtml">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.333333">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coffee_machine_v2.orderedProducts" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.orderedProducts">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminControl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AdminControl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.14975041">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InteractionProductsDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/interaction/InteractionProductsDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -207,6 +125,7 @@
         <option value="package-info" />
         <option value="Class" />
         <option value="jsf" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -221,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/web/test.xhtml" />
         <option value="$PROJECT_DIR$/src/UsersDB.java" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
@@ -250,19 +168,14 @@
         <option value="$PROJECT_DIR$/src/model/ProductsDB.java" />
         <option value="$PROJECT_DIR$/src/validation/SignInValidator.java" />
         <option value="$PROJECT_DIR$/web/signInErr.xhtml" />
-        <option value="$PROJECT_DIR$/web/myAccount.xhtml" />
-        <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/web/registration.xhtml" />
-        <option value="$PROJECT_DIR$/web/signIn.xhtml" />
         <option value="$PROJECT_DIR$/src/controller/SignIn.java" />
         <option value="$PROJECT_DIR$/src/controller/AdminControl.java" />
         <option value="$PROJECT_DIR$/src/validation/MoneyValidation.java" />
-        <option value="$PROJECT_DIR$/src/interaction/InteractionUsersDB.java" />
         <option value="$PROJECT_DIR$/src/controller/MyBag.java" />
         <option value="$PROJECT_DIR$/web/myBag.xhtml" />
         <option value="$PROJECT_DIR$/src/interaction/InteractionProductsDB.java" />
         <option value="$PROJECT_DIR$/web/index_user.xhtml" />
-        <option value="$PROJECT_DIR$/web/style.css" />
         <option value="$PROJECT_DIR$/src/model/OrdersDB.java" />
         <option value="$PROJECT_DIR$/src/res/text.properties" />
         <option value="$PROJECT_DIR$/src/res/text_ru_RU.properties" />
@@ -271,6 +184,13 @@
         <option value="$PROJECT_DIR$/src/model/OrderedProductsDB.java" />
         <option value="$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java" />
         <option value="$PROJECT_DIR$/web/index_admin.xhtml" />
+        <option value="$PROJECT_DIR$/web/myAccount.xhtml" />
+        <option value="$PROJECT_DIR$/src/interaction/InteractionUsersDB.java" />
+        <option value="$PROJECT_DIR$/web/signIn.xhtml" />
+        <option value="$PROJECT_DIR$/web/style.css" />
+        <option value="$PROJECT_DIR$/web/js/sript.js" />
+        <option value="$PROJECT_DIR$/web/index.xhtml" />
+        <option value="$PROJECT_DIR$/web/js/script.js" />
       </list>
     </option>
   </component>
@@ -294,10 +214,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1977" />
+    <option name="x" value="57" />
     <option name="y" value="24" />
     <option name="width" value="1863" />
-    <option name="height" value="1176" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -346,8 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,6 +295,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoffeeMachineEpam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CoffeeMachine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,6 +408,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1103,12 +1041,19 @@
       <workItem from="1459283069657" duration="3864000" />
       <workItem from="1459346474617" duration="1222000" />
       <workItem from="1459353761529" duration="12477000" />
-      <workItem from="1459411037279" duration="2577000" />
+      <workItem from="1459411037279" duration="2895000" />
+      <workItem from="1459424187562" duration="656000" />
+      <workItem from="1459494191520" duration="530000" />
+      <workItem from="1459690160367" duration="3085000" />
+      <workItem from="1459793487682" duration="594000" />
+      <workItem from="1459843253398" duration="163000" />
+      <workItem from="1459869667229" duration="14000" />
+      <workItem from="1459869702899" duration="2167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262578000" />
+    <option name="totallyTimeSpent" value="270105000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1120,7 +1065,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1977" y="24" width="1863" height="1176" extended-state="6" />
+    <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1132,13 +1077,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296643" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42817423" sideWeight="0.6664832" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34202296" sideWeight="0.6664832" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993513" sideWeight="0.49367088" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1715847" sideWeight="0.57894737" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15024766" sideWeight="0.42105263" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14804623" sideWeight="0.42105263" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15960374" sideWeight="0.5305785" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21243809" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20693451" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986242" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1177,13 +1122,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/798ce980-1174-444c-bcbc-e24c4c69ad7c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1341,53 +1279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/signInErr.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/registration_result.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13119534">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4723032">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/signIn.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/myAccount.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.074074">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionUsersDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57272726">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SignIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42898">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,16 +1295,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MyBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="method#MyBag#0;class#MyBag#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1467,47 +1352,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.users">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.222221">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/myBag.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2222223">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index_user.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.333334">
           <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/UsersDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1528,7 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54811203">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70714283">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,7 +1397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6464286">
           <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1571,43 +1416,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.ORDER_PRODUCT">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AdminControl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding>
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1621,9 +1434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index_admin.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.333333">
+        <state vertical-scroll-proportion="0.0">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1631,7 +1443,18 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.ORDER_PRODUCT">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -1644,12 +1467,131 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e3d9c95f/c31bda01-5d04-4ced-90bb-f1151a1b48f8/coffee_machine_v2.users">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionOrdersDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64220184">
+          <caret line="163" column="5" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/myBag.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/myAccount.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interaction/InteractionUsersDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MyBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="2" selection-start-line="86" selection-start-column="2" selection-end-line="86" selection-end-column="2" />
+          <folding>
+            <element signature="method#MyBag#0;class#MyBag#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/UsersDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.259259">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signInErr.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.196429">
+          <caret line="231" column="7" selection-start-line="231" selection-start-column="7" selection-end-line="231" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/signIn.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14975041">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

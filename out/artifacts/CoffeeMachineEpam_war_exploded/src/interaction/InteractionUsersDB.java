@@ -52,4 +52,9 @@ public class InteractionUsersDB {
         return userDB;
     }
 
+    public void addMoney(float money){
+        UsersDB user = (UsersDB)entityManager.createQuery("select u from usersEntity u ").getResultList().get(0);
+
+    }
+
 }
