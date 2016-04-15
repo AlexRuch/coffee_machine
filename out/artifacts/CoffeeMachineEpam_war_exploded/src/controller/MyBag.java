@@ -8,8 +8,8 @@ import interaction.InteractionOrdersDB;
 import model.ProductsDB;
 import model.UsersDB;
 
+import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
@@ -21,7 +21,7 @@ import java.util.List;
  */
 
 @ManagedBean
-@SessionScoped
+@ApplicationScoped
 public class MyBag {
 
     public MyBag(){
@@ -80,6 +80,7 @@ public class MyBag {
         if(orderCost < user.getUserAccount()) {
             InteractionOrdersDB.setListOfProducts(listOfUserOrder);
             InteractionOrdersDB.confirmOrder();
+            listOfUserOrder.clear();
             return "index_user";
         }
         else {

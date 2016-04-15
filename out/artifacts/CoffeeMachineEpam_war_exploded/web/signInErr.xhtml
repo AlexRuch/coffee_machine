@@ -1,11 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
-<f:view>
-    <h:outputLabel value="Hello, world"/>
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+<f:loadBundle  basename="res/text" var="msg"/>
+<f:view locale="#{bundle.localeCode}">
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+        <title>Coffee Machine</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jqueryrotate.2.1.js"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <div class="header">
+        <div class="language">
+            <h:form>
+                <h:selectOneMenu value="#{bundle.localeCode}" onchange="submit()"
+                                 valueChangeListener="#{bundle.countryLocaleCodeChanged}">
+                    <f:selectItems value="#{bundle.countriesInMap}" />
+                </h:selectOneMenu>
+            </h:form>
+        </div>
+
+        <div class="shapka">
+            <div class="logo">
+                <img src="images/logo_mini.png" height="100px"/>
+            </div>
+
+            <div class="topMenu">
+                <div class="navigation">
+                    <a href="index.xhtml">#{msg.catalogCoffee}</a>
+                    <a href="#">#{msg.catalogTopping}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="errMessage">
+            #{msg.signInError}!
+            <br/>
+        </div>
+    </div>
+    <div class="footer"></div>
+    </body>
 </f:view>
 </html>
+

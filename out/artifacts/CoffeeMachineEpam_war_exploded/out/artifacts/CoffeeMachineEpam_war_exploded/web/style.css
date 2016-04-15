@@ -2,6 +2,7 @@
 	position: fixed;
 	height: 120px;
 	width: 100%;
+	top: 0px;
 	background: #d9d9d5;
 	/*
 	box-shadow: 0.3em 0.3em 5px rgba(122,122,122,0.5);
@@ -219,4 +220,31 @@ div.myBagTable{
 	margin: auto;
 	text-align: center;
 
+}
+
+#signInPanel{
+	width: 250px;
+	height: 150px;
+	background-color: #FFFFFF;
+	position: absolute;
+	right: 15%;
+	top: 8.5em;
+	box-shadow: 0 0 5px rgba(122,122,122,0.5);
+	display: none;
+}
+
+.signInForm{
+	padding-top: 1em;
+}
+
+/*#userMoney{*/
+	/*display: none;*/
+/*}*/
+
+.userAccount{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-top: 5em;
+	font-size: 2em;
 }

@@ -2,6 +2,7 @@ package interaction;
 
 import model.UsersDB;
 
+import javax.faces.bean.ManagedBean;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.transaction.*;
@@ -11,6 +12,7 @@ import java.util.List;
 /**
  * Created by alexey on 01/03/16.
  */
+@ManagedBean
 public class InteractionUsersDB {
 
     EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
@@ -53,8 +55,12 @@ public class InteractionUsersDB {
     }
 
     public void addMoney(float money){
+        money = 300;
+        entityManager.getTransaction().begin();
         UsersDB user = (UsersDB)entityManager.createQuery("select u from usersEntity u ").getResultList().get(0);
-
+        user.setUserAccount(user.getUserAccount() + money);
+        entityManager.merge(user);
+        entityManager.getTransaction().commit();
     }
 
 }

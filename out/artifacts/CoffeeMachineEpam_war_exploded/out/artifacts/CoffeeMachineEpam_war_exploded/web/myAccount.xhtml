@@ -5,7 +5,6 @@
 <f:loadBundle  basename="res/text" var="msg"/>
 <f:view locale="#{bundle.localeCode}">
     <head>
-        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
         <title>Coffee Machine</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
@@ -19,23 +18,37 @@
                 </h:selectOneMenu>
             </h:form>
         </div>
-        <div class="logo">
-            <img src="images/logo_mini.png" height="100px"/>
 
+        <div class="shapka">
+            <div class="logo">
+                <img src="images/logo_mini.png" height="100px" alt=" "/>
+            </div>
+
+            <div class="topMenu">
+                <div class="navigation">
+                    <a href="index_user.xhtml">#{msg.catalogCoffee}</a>
+                    <a href="#">#{msg.catalogTopping}</a>
+                    <a href="myBag.xhtml">#{msg.myBag}</a>
+                    <a href="myAccount.xhtml">#{msg.account}</a>
+                </div>
+                <br/>
+                <div class="settings">
+                    <a href="index.xhtml">#{msg.logOut}</a>
+                </div>
+            </div>
         </div>
-
-        <div class="topMenu">
-            <div class="navigation">
-                <a href="index_user.xhtml">#{msg.catalogCoffee}</a>
-                <a href="#">#{msg.catalogTopping}</a>
-                <a href="myBag.xhtml">#{msg.myBag}</a>
-                <a href="index.xhtml">#{msg.logOut}</a>
+    </div>
+        <div class="content">
+            <div class="userAccount">
+                <h:form>
+                #{msg.yourAccountIs} : #{userAccount.userMoney()}
+                <h:commandButton action="#{userAccount.addMoney()}" value="add"/>
+                </h:form>
             </div>
         </div>
 
-    </div>
-        <div class="content">
-        </div>
+    <br/>
+
     <div class="footer">
     </div>
     </body>

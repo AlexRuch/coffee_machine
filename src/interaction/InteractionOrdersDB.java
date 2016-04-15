@@ -19,64 +19,64 @@ import java.util.Map;
  */
 @ManagedBean
 public class InteractionOrdersDB {
-    public InteractionOrdersDB(){}
+    public InteractionOrdersDB() {
+    }
 
 /*
     <CONFIRM USER ORDER>
      */
 
     private static SignIn signIn = new SignIn();
+
     public static void setListOfProducts(List<ProductsDB> listOfProducts) {
         InteractionOrdersDB.listOfProducts = listOfProducts;
     }
 
     private static List<ProductsDB> listOfProducts;
-    private static Map<ProductsDB, Integer>productsCounterMap = new HashMap<>();
+    private static Map<ProductsDB, Integer> productsCounterMap = new HashMap<>();
 
 
-    public static void confirmOrder(){
+    public static void confirmOrder() {
         int productEnable = 0;
         /*
         * Products counter
         */
-        for (ProductsDB productsDB :listOfProducts){
-            if(productsCounterMap.containsKey(productsDB)){
-                productsCounterMap.replace(productsDB, productsCounterMap.get(productsDB)+1);
-            }
-            else {
+        for (ProductsDB productsDB : listOfProducts) {
+            if (productsCounterMap.containsKey(productsDB)) {
+                productsCounterMap.replace(productsDB, productsCounterMap.get(productsDB) + 1);
+            } else {
                 productsCounterMap.put(productsDB, 1);
             }
         }
 
 // СДЕЛАТЬ ПЕРЕБОР ЭЛЕМЕНТОВ В ХЭШЕ И ПРОВЕРИТЬ КОЛИЧЕСВО ПРОДУКТА В ЗАКАЗЕ И ЕГО КОЛИЧЕСТВО В НАЛИЧИЕ
         ProductsDB productsDB;
-         int statusOrder;
-         int finalStatusOrder = 1;
-  for(Map.Entry productsMap : productsCounterMap.entrySet()){
-      productsDB = (ProductsDB) productsMap.getKey();
-      int quantityInOrder = (int) productsMap.getValue();
-            if(quantityInOrder > productsDB.getProductQuantity()){
+        int statusOrder;
+        int finalStatusOrder = 1;
+        for (Map.Entry productsMap : productsCounterMap.entrySet()) {
+            productsDB = (ProductsDB) productsMap.getKey();
+            int quantityInOrder = (int) productsMap.getValue();
+            if (quantityInOrder > productsDB.getProductQuantity()) {
                 statusOrder = 0;
-            }
-      else {
+            } else {
                 statusOrder = 1;
             }
-      finalStatusOrder = finalStatusOrder * statusOrder;
+            finalStatusOrder = finalStatusOrder * statusOrder;
         }
-        if (finalStatusOrder == 1){
+        if (finalStatusOrder == 1) {
             confirmedOrder();
         }
         productsCounterMap.clear();
     }
 
-    private static void confirmedOrder(){
+    private static void confirmedOrder() {
         EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
 
         OrdersDB ordersDB;
         OrderedProductsDB orderedProductsDB;
         List<OrderedProductsDB> listOfOrderedProducts = new ArrayList<>();
 
-        for (ProductsDB product : listOfProducts){
+        for (ProductsDB product : listOfProducts) {
 
             orderedProductsDB = new OrderedProductsDB();
 
@@ -85,7 +85,7 @@ public class InteractionOrdersDB {
 
             orderedProductsDB.setProductDB(product);
             product.getOrderedProducts().add(orderedProductsDB);
-            product.setProductQuantity(product.getProductQuantity() -1);
+            product.setProductQuantity(product.getProductQuantity() - 1);
 
             entityManager.persist(orderedProductsDB);
             entityManager.merge(product);
@@ -105,7 +105,7 @@ public class InteractionOrdersDB {
                 .getResultList().get(0));
         ordersDB.setUser(user);
 
-        for(OrderedProductsDB orderedProduct : listOfOrderedProducts) {
+        for (OrderedProductsDB orderedProduct : listOfOrderedProducts) {
 
             user.setUserAccount(user.getUserAccount() - orderedProduct.getProductDB().getProductPrice());
             ordersDB.getProduct().add(orderedProduct);
@@ -122,11 +122,12 @@ public class InteractionOrdersDB {
      */
 
 
-/*
-    <ORDERS IN ADMIN PANEL>
-    */
+    /*
+        <ORDERS IN ADMIN PANEL>
+        */
     private List<OrderedProductsDB> orderedProductsList;
     public List<ProductsDB> productsInOrderList;
+
     public List<ProductsDB> getProductsInOrderList() {
         return productsInOrderList;
     }
@@ -139,24 +140,24 @@ public class InteractionOrdersDB {
 
     EntityManager entityManager = Persistence.createEntityManagerFactory("EPAM").createEntityManager();
 
-    public List<OrdersDB> allOrders(){
+    public List<OrdersDB> allOrders() {
 
         return entityManager.createQuery("select o from ordersEntity o", OrdersDB.class)
                 .getResultList();
     }
 
-    public String orderDetails(long orderId){
+    public String orderDetails(long orderId) {
 
         OrdersDB order = entityManager.createQuery("select o from ordersEntity o where o.id = ?1", OrdersDB.class)
-               .setParameter(1, orderId)
-               .getResultList().get(0);
+                .setParameter(1, orderId)
+                .getResultList().get(0);
         orderedProductsList = order.getProduct();
         orderedProductSize = orderedProductsList.size();
 
         productsInOrderList = new ArrayList<>();
         entityManager.getTransaction().begin();
-        for(OrderedProductsDB orderedProductsDB: orderedProductsList){
-           productsInOrderList.add(orderedProductsDB.getProductDB());
+        for (OrderedProductsDB orderedProductsDB : orderedProductsList) {
+            productsInOrderList.add(orderedProductsDB.getProductDB());
         }
         entityManager.getTransaction().commit();
         return "adminOrderDetails";
